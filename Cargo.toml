@@ -1,0 +1,11 @@
+[package]
+name = "record-plant"
+version = "0.1.0"
+edition = "2021"
+description = "Plant-facing vinyl manufacturing template and proof metadata for Bitneedle."
+repository = "https://github.com/wavey-ai/bitneedle"
+license = "SEE LICENSE IN LICENSE"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

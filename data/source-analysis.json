@@ -1,0 +1,2525 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-04T23:03:34.013Z",
+  "sources": [
+    {
+      "id": "12inch-lable-template-2up-106mm-pdf",
+      "title": "12inch Lable Template 2up 106mm.pdf",
+      "url": "https://www.mightymediadiscs.co.uk/templates/vinyl/12inch%20Lable%20Template%202up%20106mm.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "mighty-media-discs-12-label-2up-106mm-2014-07"
+      ],
+      "path": ".cache/record-plant/sources/12inch-lable-template-2up-106mm-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 62536,
+      "sha256": "43ed169bdce95b866a80ae91c47003b309e641bf365661f7a82b66a9ff63fc97",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "12inch-lable-template-2up-106mm-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 417.165,
+              "heightPt": 717.638,
+              "widthMm": 147.167,
+              "heightMm": 253.167
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2424-vinyl-12-in-lbls-pdf",
+      "title": "2424 Vinyl 12-IN-LBLS.pdf",
+      "url": "https://www.dropbox.com/scl/fi/f8yzk0ov23mfjykv167dx/12-IN-LBLS.pdf?rlkey=9dmva0s03o1es7qr1pzdkgs7i&st=3vlz70nx&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "2424-vinyl-12-center-label-ab-2019"
+      ],
+      "path": ".cache/record-plant/sources/2424-vinyl-12-in-lbls-pdf.pdf",
+      "contentType": "application/binary",
+      "bytes": 66754,
+      "sha256": "44600c7f7903c260a8563ce6455f9350ff006640040f7999c833ed907b3d44b6",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "2424-vinyl-12-in-lbls-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 432,
+              "heightPt": 720,
+              "widthMm": 152.4,
+              "heightMm": 254
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2424-vinyl-7-in-sh-lbls-pdf",
+      "title": "2424 Vinyl 7-IN-SH-LBLS.pdf",
+      "url": "https://www.dropbox.com/scl/fi/pinyzf07puze5m3jat5eo/7-IN-SH-LBLS.pdf?rlkey=vrzhgc4rk2bk5kc9qtgz1w77h&st=7ucyigzm&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "2424-vinyl-7-small-hole-center-label-ab-2019"
+      ],
+      "path": ".cache/record-plant/sources/2424-vinyl-7-in-sh-lbls-pdf.pdf",
+      "contentType": "application/binary",
+      "bytes": 67173,
+      "sha256": "b27c9cd3e17a0c5056f1f6095608829e62356ba9cdc5d09fdd7812d9b223d025",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "2424-vinyl-7-in-sh-lbls-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 432,
+              "heightPt": 720,
+              "widthMm": 152.4,
+              "heightMm": 254
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3a-12inch-label-spec-pdf",
+      "title": "3a.-12inch-label-spec.pdf",
+      "url": "https://www.sixtysixproductions.co.uk/files/2016-11/3a.-12inch-label-spec.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sixtysix-productions-12-label-100mm-2016-05"
+      ],
+      "path": ".cache/record-plant/sources/3a-12inch-label-spec-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 340854,
+      "sha256": "49e48048cdb182d974e8b2219b0dc6045ae9f3de8e3a87044950a1721e78f551",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "3a-12inch-label-spec-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 595.276,
+              "heightPt": 841.89,
+              "widthMm": 210,
+              "heightMm": 297
+            },
+            {
+              "widthPt": 595.276,
+              "heightPt": 841.89,
+              "widthMm": 210,
+              "heightMm": 297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7inch-label-template-2up-90mm-pdf",
+      "title": "7inch Label Template 2up 90mm.pdf",
+      "url": "https://www.mightymediadiscs.co.uk/templates/vinyl/7inch%20Label%20Template%202up%2090mm.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "mighty-media-discs-7-label-2up-90mm-2014-07"
+      ],
+      "path": ".cache/record-plant/sources/7inch-label-template-2up-90mm-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 28476,
+      "sha256": "ec8007ce1a2bf25f578b283f44314dce07d9ddd32356e62968458604379622d8",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "7inch-label-template-2up-90mm-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 413.858,
+              "heightPt": 714.331,
+              "widthMm": 146,
+              "heightMm": 252
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audio-geography-studios-labels-and-packaging",
+      "title": "Audio Geography Studios Labels And Packaging",
+      "url": "https://www.audiogeography.com/packaging",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "audio-geography-7-label-3p25in",
+        "audio-geography-12-label-4in"
+      ],
+      "path": ".cache/record-plant/sources/audio-geography-studios-labels-and-packaging.bin",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 88027,
+      "sha256": "172167468b04df8bfb000c348b515601851e118f1ae29ca83e17472bc4c894ce",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "bladud-flies-12inch-centre-label-digital-print-template-pdf",
+      "title": "Bladud Flies 12inch_centre_label_digital-print_template.pdf",
+      "url": "https://bladudflies.com/wp-content/uploads/2025/04/12inch_centre_label_digital-print_template.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "bladudflies-12-center-label-digital-2025-04"
+      ],
+      "path": ".cache/record-plant/sources/bladud-flies-12inch-centre-label-digital-print-template-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 758187,
+      "sha256": "1c74ebac9870969c8f30a118ea78c6155d42f16aaba1c47cab5c4164b875cc89",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "bladud-flies-12inch-centre-label-digital-print-template-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 300.472,
+              "heightPt": 300.472,
+              "widthMm": 106,
+              "heightMm": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cascade-12label-a-b-cascade-pdf",
+      "title": "Cascade 12label_A-B_cascade.pdf",
+      "url": "https://cascaderecordpressing.com/assets/templates/12label_A-B_cascade.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cascade-record-pressing-12-label-ab-2025-03"
+      ],
+      "path": ".cache/record-plant/sources/cascade-12label-a-b-cascade-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 299054,
+      "sha256": "01f0f892a8d501036d0b66f155d43bb0ab31e4ccd1817fbd2d640ca45b6e83ad",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "cascade-12label-a-b-cascade-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cascade-7label-a-b-largehole-cascade-pdf",
+      "title": "Cascade 7label_A-B_largeHole_cascade.pdf",
+      "url": "https://cascaderecordpressing.com/assets/templates/7label_A-B_largeHole_cascade.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cascade-record-pressing-7-large-hole-label-ab-2025-03"
+      ],
+      "path": ".cache/record-plant/sources/cascade-7label-a-b-largehole-cascade-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 236973,
+      "sha256": "b4c8f229b287ea7ea3a3acc7eb649e7170c24175bc7b34b187df957d145511f2",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "cascade-7label-a-b-largehole-cascade-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cascade-7label-a-b-smallhole-cascade-pdf",
+      "title": "Cascade 7label_A-B_smallHole_cascade.pdf",
+      "url": "https://cascaderecordpressing.com/assets/templates/7label_A-B_smallHole_cascade.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cascade-record-pressing-7-small-hole-label-ab-2025-03"
+      ],
+      "path": ".cache/record-plant/sources/cascade-7label-a-b-smallhole-cascade-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 303535,
+      "sha256": "a9ef53b3309f87d1e6b99e46f671a58ce26b6d09bd1d393fe0b5b1becb708733",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "cascade-7label-a-b-smallhole-cascade-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "celebrate-records-artwork-12inch",
+      "title": "Celebrate Records Artwork_12inch",
+      "url": "https://www.celebrate.de/en/cover-12inch-vinyl/",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "celebrate-12-label",
+        "celebrate-12-picture-label"
+      ],
+      "path": ".cache/record-plant/sources/celebrate-records-artwork-12inch.bin",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 298659,
+      "sha256": "19b50320a49a9f701dd5acfe050eef34f743ca6df13eb6528147d2284c1efea3",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "celebrate-records-artwork-7inch",
+      "title": "Celebrate Records Artwork_7inch",
+      "url": "https://www.celebrate.de/en/schallplatten-pressen-lassen-7-inch-cover-innenhuellen-drucksachen-templates/",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "celebrate-7-small-hole-label",
+        "celebrate-7-large-hole-label",
+        "celebrate-7-picture-label"
+      ],
+      "path": ".cache/record-plant/sources/celebrate-records-artwork-7inch.bin",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 283518,
+      "sha256": "3f5ad9866c0082dce0d11dffd983b3d280fcc532b52289f35e5b69c3a23b45f8",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "cram-duplication-10-12-inch-vinyl-label-pdf",
+      "title": "Cram Duplication 10-12-inch-vinyl-label.pdf",
+      "url": "https://www.cramduplication.co.uk/download/templates/10-12-inch-label/10-12-inch-vinyl-label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cram-duplication-10-12-label-100mm"
+      ],
+      "path": ".cache/record-plant/sources/cram-duplication-10-12-inch-vinyl-label-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 54002,
+      "sha256": "ac3a92e7a481ea2c31f1a6d6de7e86b118b3e10c7dadfa209664f4a88d5d39ed",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "cram-duplication-10-12-inch-vinyl-label-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cravedog-7in-label-38mm-hole-zip",
+      "title": "Cravedog 7in_Label_38mm_Hole.zip",
+      "url": "https://cravedog-in-yo-face.squarespace.com/s/7in_Label_38mm_Hole.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cravedog-7-label-38mm-hole-2024-06"
+      ],
+      "path": ".cache/record-plant/sources/cravedog-7in-label-38mm-hole-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 4870032,
+      "sha256": "3bb06f232d40a242af9c2b1c814d8a724ed2cc9822541a16b83e8b5ea589f6cd",
+      "archiveEntries": [
+        "7in_Label_38mm_Hole/",
+        "7in_Label_38mm_Hole/7in_Label_38mm_Hole.pdf",
+        "__MACOSX/7in_Label_38mm_Hole/._7in_Label_38mm_Hole.pdf",
+        "7in_Label_38mm_Hole/7in_Label_38mm_Hole.ai",
+        "__MACOSX/7in_Label_38mm_Hole/._7in_Label_38mm_Hole.ai",
+        "7in_Label_38mm_Hole/.DS_Store",
+        "__MACOSX/7in_Label_38mm_Hole/._.DS_Store",
+        "7in_Label_38mm_Hole/7in_Label_38mm_Hole.psd",
+        "__MACOSX/7in_Label_38mm_Hole/._7in_Label_38mm_Hole.psd",
+        "7in_Label_38mm_Hole/7in_Label_38mm_Hole.indd",
+        "__MACOSX/7in_Label_38mm_Hole/._7in_Label_38mm_Hole.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7in_Label_38mm_Hole/7in_Label_38mm_Hole.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 921.26,
+              "heightPt": 566.929,
+              "widthMm": 325,
+              "heightMm": 200
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/7in_Label_38mm_Hole/._7in_Label_38mm_Hole.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "cravedog-7in-label-7mm-hole-zip",
+      "title": "Cravedog 7in_Label_7mm_Hole.zip",
+      "url": "https://cravedog-in-yo-face.squarespace.com/s/7in_Label_7mm_Hole.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "cravedog-7-label-7mm-hole-2024-06"
+      ],
+      "path": ".cache/record-plant/sources/cravedog-7in-label-7mm-hole-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 4678635,
+      "sha256": "a04a73d9bd2716c0b703f68b0c80b60749199fd9a21a1adaedb00a46756eaebd",
+      "archiveEntries": [
+        "7in_Label_7mm_Hole/",
+        "7in_Label_7mm_Hole/.DS_Store",
+        "__MACOSX/7in_Label_7mm_Hole/._.DS_Store",
+        "7in_Label_7mm_Hole/7in_Label_7mm_Hole.psd",
+        "__MACOSX/7in_Label_7mm_Hole/._7in_Label_7mm_Hole.psd",
+        "7in_Label_7mm_Hole/7in_Label_7mm_Hole.ai",
+        "__MACOSX/7in_Label_7mm_Hole/._7in_Label_7mm_Hole.ai",
+        "7in_Label_7mm_Hole/7in_Label_7mm_Hole.pdf",
+        "__MACOSX/7in_Label_7mm_Hole/._7in_Label_7mm_Hole.pdf",
+        "7in_Label_7mm_Hole/7in_Label_7mm_Hole.indd",
+        "__MACOSX/7in_Label_7mm_Hole/._7in_Label_7mm_Hole.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7in_Label_7mm_Hole/7in_Label_7mm_Hole.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 921.26,
+              "heightPt": 566.929,
+              "widthMm": 325,
+              "heightMm": 200
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/7in_Label_7mm_Hole/._7in_Label_7mm_Hole.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "deepgrooves-12inch-label-100-mm-template-zip",
+      "title": "Deepgrooves 12inch Label 100 mm Template.zip",
+      "url": "https://deepgrooves.eu/wp-content/uploads/2019/07/Deepgrooves-12inch-Label-100-mm-Template.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "deepgrooves-12-label-100mm-2019-07"
+      ],
+      "path": ".cache/record-plant/sources/deepgrooves-12inch-label-100-mm-template-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 2384896,
+      "sha256": "e8b9c50d988cabd51996485c1d43eaf3197d4615ba79158e6a4429c2db3e95e1",
+      "archiveEntries": [
+        "Deepgrooves-12inch-Label-100-mm-Template/",
+        "Deepgrooves-12inch-Label-100-mm-Template/Illustrator Template/",
+        "Deepgrooves-12inch-Label-100-mm-Template/Illustrator Template/Deepgrooves 12inch Label_100_mm_Template.ai",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Deepgrooves Label 100mm Template.idml",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Deepgrooves Label 100mm Template.indd",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Deepgrooves Label 100mm Template.pdf",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Links/",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Links/Deepgrooves 12inch Label_100_mm_Template.pdf",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Links/Label Mask 100mm.png",
+        "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Links/Label Mask 110mm Black Line.png",
+        "Deepgrooves-12inch-Label-100-mm-Template/PDF/",
+        "Deepgrooves-12inch-Label-100-mm-Template/PDF/Deepgrooves 12inch Label_100_mm_Template.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Deepgrooves Label 100mm Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 311.811,
+              "heightPt": 311.811,
+              "widthMm": 110,
+              "heightMm": 110
+            }
+          ]
+        },
+        {
+          "entry": "Deepgrooves-12inch-Label-100-mm-Template/Indesign Template/Links/Deepgrooves 12inch Label_100_mm_Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 311.811,
+              "heightPt": 311.811,
+              "widthMm": 110,
+              "heightMm": 110
+            }
+          ]
+        },
+        {
+          "entry": "Deepgrooves-12inch-Label-100-mm-Template/PDF/Deepgrooves 12inch Label_100_mm_Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 311.811,
+              "heightPt": 311.811,
+              "widthMm": 110,
+              "heightMm": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deepgrooves-7inch-label-92-mm-template-zip",
+      "title": "Deepgrooves 7inch Label 92 mm Template.zip",
+      "url": "https://deepgrooves.eu/wp-content/uploads/2019/07/Deepgrooves-7inch-Label-92-mm-Template.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "deepgrooves-7-label-92mm-2019-07"
+      ],
+      "path": ".cache/record-plant/sources/deepgrooves-7inch-label-92-mm-template-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 3935074,
+      "sha256": "b6d3d5d18675a0006d9aa03152d2c1c7663bf6533bc0e4cb6b3e8201fd3b08e0",
+      "archiveEntries": [
+        "Deepgrooves-7inch-Label-92-mm-Template/",
+        "Deepgrooves-7inch-Label-92-mm-Template/Illustrator Template/",
+        "Deepgrooves-7inch-Label-92-mm-Template/Illustrator Template/Deepgrooves 7inch Label_92_mm_Template.ai",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Deepgrooves Label 92mm Template.idml",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Deepgrooves Label 92mm Template.indd",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Deepgrooves Label 92mm Template.pdf",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Links/",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Links/Deepgrooves 7inch Label_92_mm_Template.pdf",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Links/Label Mask 100mm.png",
+        "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Links/Label Mask 110mm Black Line.png",
+        "Deepgrooves-7inch-Label-92-mm-Template/PDF/",
+        "Deepgrooves-7inch-Label-92-mm-Template/PDF/Deepgrooves 7inch Label_92_mm_Template.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Deepgrooves Label 92mm Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 289.134,
+              "heightPt": 289.134,
+              "widthMm": 102,
+              "heightMm": 102
+            }
+          ]
+        },
+        {
+          "entry": "Deepgrooves-7inch-Label-92-mm-Template/Indesign Template/Links/Deepgrooves 7inch Label_92_mm_Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 289.134,
+              "heightPt": 289.134,
+              "widthMm": 102,
+              "heightMm": 102
+            }
+          ]
+        },
+        {
+          "entry": "Deepgrooves-7inch-Label-92-mm-Template/PDF/Deepgrooves 7inch Label_92_mm_Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 289.134,
+              "heightPt": 289.134,
+              "widthMm": 102,
+              "heightMm": 102
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital-force-12-record-label-template-pdf",
+      "title": "Digital Force 12-Record-Label-Template.pdf",
+      "url": "https://digitalforce.com/wordpress1/wp-content/uploads/2014/10/12-Record-Label-Template.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "digital-force-12-record-label-4in-2014-10"
+      ],
+      "path": ".cache/record-plant/sources/digital-force-12-record-label-template-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 671837,
+      "sha256": "e5f8bd0ef1d7086f9f6f76f04de6128e6d335e0972eb46f5e28855ce7f7b5ecb",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "digital-force-12-record-label-template-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dms-12-inch-vinyl-labels-side-a-b-pdf",
+      "title": "DMS 12 Inch Vinyl Labels - SIDE A + B.pdf",
+      "url": "https://api.discmanufacturingservices.com/storage/templates/17186/12-Inch-Vinyl-Labels---SIDE-A-%2B-B.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "dms-vinyl-12-label-ab-100mm"
+      ],
+      "path": ".cache/record-plant/sources/dms-12-inch-vinyl-labels-side-a-b-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 39840,
+      "sha256": "eb864365c37d7cfded16751d6bbb93a0c9516be5a22f3d06a9c7c70d0b52a6c0",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "dms-12-inch-vinyl-labels-side-a-b-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1026.14,
+              "heightPt": 725.669,
+              "widthMm": 361.999,
+              "heightMm": 256
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-90mm-non-standard-pdf",
+      "title": "DMS 7 Inch Vinyl Labels - Big Centre Holes - SIDE A + B - 90mm - Non Standard.pdf",
+      "url": "https://api.discmanufacturingservices.com/storage/templates/17195/7-Inch-Vinyl-Labels---Big-Centre-Holes---SIDE-A-%2B-B---90mm---Non-Standard.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "dms-vinyl-7-big-hole-label-ab-90mm-non-standard"
+      ],
+      "path": ".cache/record-plant/sources/dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-90mm-non-standard-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 40949,
+      "sha256": "b06609ef6b033d30d08d46c82dca9806e9c1d2472cc7438aea620514cfd40736",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-90mm-non-standard-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1122.52,
+              "heightPt": 841.89,
+              "widthMm": 396,
+              "heightMm": 297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-pdf",
+      "title": "DMS 7 Inch Vinyl Labels - Big Centre Holes - SIDE A + B.pdf",
+      "url": "https://api.discmanufacturingservices.com/storage/templates/17195/7-Inch-Vinyl-Labels---Big-Centre-Holes---SIDE-A-%2B-B.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "dms-vinyl-7-big-hole-label-ab-84mm"
+      ],
+      "path": ".cache/record-plant/sources/dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 40545,
+      "sha256": "8025b66a9736aa800d20fa7775fea3ef454cd192bd4fd47f99563d7ad7a5a96b",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "dms-7-inch-vinyl-labels-big-centre-holes-side-a-b-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1122.52,
+              "heightPt": 841.89,
+              "widthMm": 396,
+              "heightMm": 297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dms-7-inch-vinyl-labels-small-centre-holes-side-a-b-pdf",
+      "title": "DMS 7 Inch Vinyl Labels - Small Centre Holes - SIDE A + B.pdf",
+      "url": "https://api.discmanufacturingservices.com/storage/templates/17195/7-Inch-Vinyl-Labels---Small-Centre-Holes---SIDE-A-%2B-B.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "dms-vinyl-7-small-hole-label-ab-84mm"
+      ],
+      "path": ".cache/record-plant/sources/dms-7-inch-vinyl-labels-small-centre-holes-side-a-b-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 41281,
+      "sha256": "9ce6431d8569427ae4c4706149b93809a19f1ae9dd18bb097bf88015e9c770c9",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "dms-7-inch-vinyl-labels-small-centre-holes-side-a-b-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1122.52,
+              "heightPt": 841.89,
+              "widthMm": 396,
+              "heightMm": 297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duophonic-10-und-12-label-pdf",
+      "title": "Duophonic 10 und 12 Label.pdf",
+      "url": "https://duophonic.de/wp-content/uploads/2024/07/10-und-12-Label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "duophonic-10-12-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/duophonic-10-und-12-label-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 31470,
+      "sha256": "a09a24dc1306b4b3a4a1b11257eed774210cbb381b7fc851a148b81bc601e806",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "duophonic-10-und-12-label-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 2383.94,
+              "heightPt": 1417.32,
+              "widthMm": 841.001,
+              "heightMm": 499.999
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duophonic-7-label-englisch-pdf",
+      "title": "Duophonic 7 Label englisch.pdf",
+      "url": "https://duophonic.de/wp-content/uploads/2024/07/7-Label-englisch.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "duophonic-7-small-hole-label-2024-07",
+        "duophonic-7-big-hole-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/duophonic-7-label-englisch-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1493372,
+      "sha256": "654c17036b879abb528672b5d978dc98b9422b1369908404c53a3eb2bb58af36",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "duophonic-7-label-englisch-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 2383.94,
+              "heightPt": 1417.32,
+              "widthMm": 841.001,
+              "heightMm": 499.999
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elasticstage-12-vinyl-v1-6-zip",
+      "title": "elasticStage 12_Vinyl_v1_6.zip",
+      "url": "https://es-ew1-prod-artwork-templates.s3.eu-west-1.amazonaws.com/templates/12_Vinyl_v1_6.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "elasticstage-12-center-label-v1-6"
+      ],
+      "path": ".cache/record-plant/sources/elasticstage-12-vinyl-v1-6-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 3026267,
+      "sha256": "6046a65c818fc734bef400afa7a7f1e547d06226d1214573329e155a69396041",
+      "archiveEntries": [
+        "12_Vinyl_v1_6/",
+        "12_Vinyl_v1_6/for Illustrator only (recommended)/",
+        "12_Vinyl_v1_6/for Illustrator only (recommended)/vinyl_12_booklet_v1_6.ai",
+        "12_Vinyl_v1_6/for Illustrator only (recommended)/vinyl_12_cover_v1_6.ai",
+        "12_Vinyl_v1_6/for Illustrator only (recommended)/vinyl_12_inner_sleeve_v1_6.ai",
+        "12_Vinyl_v1_6/for Illustrator only (recommended)/vinyl_12_labels_v1_6.ai",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_1.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_2.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_3.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_4.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_5.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_booklet_v1_6_dims_Page_6.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_cover_v1_6_dims.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_inner_sleeve_v1_6_dims.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/JPG/vinyl_12_labels_v1_6_dims.jpg",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_booklet_v1_6_dims.pdf",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_cover_v1_6_dims.pdf",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_inner_sleeve_v1_6_dims.pdf",
+        "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_labels_v1_6_dims.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_booklet_v1_6_dims.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1814.17,
+              "heightPt": 963.78,
+              "widthMm": 639.999,
+              "heightMm": 340
+            }
+          ]
+        },
+        {
+          "entry": "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_cover_v1_6_dims.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1907.72,
+              "heightPt": 1014.81,
+              "widthMm": 673.001,
+              "heightMm": 358.002
+            }
+          ]
+        },
+        {
+          "entry": "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_inner_sleeve_v1_6_dims.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1836.86,
+              "heightPt": 989.294,
+              "widthMm": 648.003,
+              "heightMm": 349.001
+            }
+          ]
+        },
+        {
+          "entry": "12_Vinyl_v1_6/Reference files to build your own templates (not recommended)/PDF/vinyl_12_labels_v1_6_dims.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 300.473,
+              "heightPt": 600.946,
+              "widthMm": 106,
+              "heightMm": 212
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elasticstage-vinyl-aw-jpg-v1-1-zip",
+      "title": "elasticStage Vinyl_AW_jpg_v1_1.zip",
+      "url": "https://es-ew1-prod-artwork-templates.s3.eu-west-1.amazonaws.com/templates/Vinyl_AW_jpg_v1_1.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "elasticstage-quick-easy-vinyl-jpg-v1-1"
+      ],
+      "path": ".cache/record-plant/sources/elasticstage-vinyl-aw-jpg-v1-1-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 1420349,
+      "sha256": "51525872c1c78cbb9c6e9bafccd31d4c97864b587ec7e13500eace5999a98027",
+      "archiveEntries": [
+        "Vinyl AW jpg/",
+        "__MACOSX/._Vinyl AW jpg",
+        "Vinyl AW jpg/label.jpg",
+        "__MACOSX/Vinyl AW jpg/._label.jpg",
+        "Vinyl AW jpg/inner sleeve.jpg",
+        "__MACOSX/Vinyl AW jpg/._inner sleeve.jpg",
+        "Vinyl AW jpg/booklet left.jpg",
+        "__MACOSX/Vinyl AW jpg/._booklet left.jpg",
+        "Vinyl AW jpg/spine.jpg",
+        "__MACOSX/Vinyl AW jpg/._spine.jpg",
+        "Vinyl AW jpg/bookleft landscape.jpg",
+        "__MACOSX/Vinyl AW jpg/._bookleft landscape.jpg",
+        "Vinyl AW jpg/back.jpg",
+        "__MACOSX/Vinyl AW jpg/._back.jpg",
+        "Vinyl AW jpg/front.jpg",
+        "__MACOSX/Vinyl AW jpg/._front.jpg",
+        "Vinyl AW jpg/booklet right.jpg",
+        "__MACOSX/Vinyl AW jpg/._booklet right.jpg"
+      ],
+      "pdfs": []
+    },
+    {
+      "id": "furnace-12in-center-label-full-sized-60001-zip",
+      "title": "Furnace 12in_center_label_full_sized_60001.zip",
+      "url": "https://www.dropbox.com/sh/wnj4xyfmtijjsma/AACN4P7HenV6GSYlAT3yk9z7a?dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "furnace-record-pressing-12-center-label-60001-2020-07"
+      ],
+      "path": ".cache/record-plant/sources/furnace-12in-center-label-full-sized-60001-zip.bin",
+      "contentType": "application/zip",
+      "bytes": 4653888,
+      "sha256": "98a285d29e3860135a0e1eacbcdff06d2443a283313d03984e6293a958829782",
+      "archiveEntries": [
+        "/",
+        "12in_center_label_full_sized_60001.eps",
+        "12in_center_label_full_sized_60001.pdf",
+        "12in_center_label_full_sized_60001.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "12in_center_label_full_sized_60001.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furnace-7in-center-label-large-hole-60019-zip",
+      "title": "Furnace 7in_center_label_large_hole_60019.zip",
+      "url": "https://www.dropbox.com/scl/fo/yhkbzw7cstp54o7prqmjd/AC5_cqBvhgdo5EcgNSC_KUs?rlkey=axmj2tpd8lfptfxkhovyh0we1&st=7fatm7hc&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "furnace-record-pressing-7-large-hole-center-label-60019-2020-07"
+      ],
+      "path": ".cache/record-plant/sources/furnace-7in-center-label-large-hole-60019-zip.bin",
+      "contentType": "application/zip",
+      "bytes": 4648265,
+      "sha256": "00b3c5b66cfd50ff83d6ce75a297c9b31400697e16e1f91b6fb55c7eccb82e75",
+      "archiveEntries": [
+        "/",
+        "7in_center_label_large_hole_60019.eps",
+        "7in_center_label_large_hole_60019.pdf",
+        "7in_center_label_large_hole_60019.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7in_center_label_large_hole_60019.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furnace-7in-center-label-small-hole-60018-zip",
+      "title": "Furnace 7in_center_label_small_hole_60018.zip",
+      "url": "https://www.dropbox.com/scl/fo/d876m8vs7cpfo8bhl35pj/AMot51aaUkTyUaGhKMkHrt8?rlkey=tw1pfx0ggckk3p4n4wsewurym&st=wc7j4a9g&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "furnace-record-pressing-7-small-hole-center-label-60018-2026-03"
+      ],
+      "path": ".cache/record-plant/sources/furnace-7in-center-label-small-hole-60018-zip.bin",
+      "contentType": "application/zip",
+      "bytes": 4634333,
+      "sha256": "dbae9b62b113fe5cf57960d8186064bd6c9118a9bc4a9ae033a384d96c0c1c1d",
+      "archiveEntries": [
+        "/",
+        "7in_center_label_small_hole_60018.pdf",
+        "7in_center_label_small_hole_60018.eps",
+        "7in_center_label_small_hole_60018.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7in_center_label_small_hole_60018.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gotta-groove-records-12-inch-labels-eps",
+      "title": "Gotta Groove Records 12-INCH-LABELS.eps",
+      "url": "https://www.dropbox.com/scl/fi/0dpalz5wy5imbi0wcdv5t/12-INCH-LABELS.eps?rlkey=y7dy9lyv55dfb9r2reuksuffr&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "gotta-groove-12-label-2023-illustrator"
+      ],
+      "path": ".cache/record-plant/sources/gotta-groove-records-12-inch-labels-eps.eps",
+      "contentType": "application/binary",
+      "bytes": 1808546,
+      "sha256": "e7c6ae2de18816afe263d403943ad7f2b45db215c2e1297e74fcaba172eecbc6",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "gotta-groove-records-7-inch-label-large-hole-eps",
+      "title": "Gotta Groove Records 7-Inch-Label-LARGE-HOLE.eps",
+      "url": "https://www.dropbox.com/scl/fi/d0p13z7fw34jyiqimi93p/7-Inch-Label-LARGE-HOLE.eps?rlkey=7nk5i1u0e2u9p35fhob9rlvoj&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "gotta-groove-7-large-hole-label-2014-12"
+      ],
+      "path": ".cache/record-plant/sources/gotta-groove-records-7-inch-label-large-hole-eps.eps",
+      "contentType": "application/binary",
+      "bytes": 1669162,
+      "sha256": "62f792ad9f3821d28f0771c5232359f8e84d5fe6d5c306c8c1f3a406093a55af",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "gotta-groove-records-7-inch-label-small-hole-eps",
+      "title": "Gotta Groove Records 7-Inch-Label-small-hole.eps",
+      "url": "https://www.dropbox.com/scl/fi/yl6bct88fecnb3sjyj6by/7-Inch-Label-small-hole.eps?rlkey=glxts3xib04c7lhkduk01le6q&dl=1",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "gotta-groove-7-small-hole-label-2014-12"
+      ],
+      "path": ".cache/record-plant/sources/gotta-groove-records-7-inch-label-small-hole-eps.eps",
+      "contentType": "application/binary",
+      "bytes": 1437806,
+      "sha256": "a76a633fe4d94ef6eb1b784048fb120577235c77d9329e3cc035fe349efaa0e8",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "grama-7-inch-single-label-92mm-template-pdf",
+      "title": "Grama 7-Inch Single LABEL 92mm Template.pdf",
+      "url": "https://grama.pt/wp-content/uploads/2025/06/7-Inch-Single-LABEL-92mm-Template.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "grama-7-single-label-92mm-2025-06"
+      ],
+      "path": ".cache/record-plant/sources/grama-7-inch-single-label-92mm-template-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 47673,
+      "sha256": "168f906301cb705868ae924ce28f9c43e103799a9818f1544cfaeedcc0e0aa69",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "grama-7-inch-single-label-92mm-template-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 435.584,
+              "heightPt": 272.126,
+              "widthMm": 153.664,
+              "heightMm": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green-lakes-12inch-center-label-pdf",
+      "title": "Green Lakes 12inch-center-label.pdf",
+      "url": "https://greenlakespressing.com/wp-content/uploads/2024/11/12inch-center-label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "green-lakes-pressing-12-label-2024-11"
+      ],
+      "path": ".cache/record-plant/sources/green-lakes-12inch-center-label-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 115469,
+      "sha256": "04feb5ce5cfe38d75436abe9a71b54458b32d673319c7610843bce2c228dd0e7",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "green-lakes-12inch-center-label-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 342.472,
+              "heightPt": 342.472,
+              "widthMm": 120.817,
+              "heightMm": 120.817
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green-lakes-7inch-vinyl-center-label-zip",
+      "title": "Green Lakes 7inch_Vinyl-Center-Label.zip",
+      "url": "https://greenlakespressing.com/wp-content/uploads/2023/07/7inch_Vinyl-Center-Label.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "green-lakes-pressing-7-label-2023-07"
+      ],
+      "path": ".cache/record-plant/sources/green-lakes-7inch-vinyl-center-label-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 1283447,
+      "sha256": "98acae0994001dc00a93f757b85c3504c3048c55538ebc339e243f1222bd0a84",
+      "archiveEntries": [
+        "7inch_Vinyl Center Label.ai",
+        "7inch_Vinyl Center Label.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "7inch_Vinyl Center Label.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 850.394,
+              "heightPt": 708.661,
+              "widthMm": 300,
+              "heightMm": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gz-media-gd17e-pdf",
+      "title": "GZ Media GD17E.pdf",
+      "url": "https://secure.gzmedia.eu/vykresova-dokumentace/Files/GD17E_c7b79731d23f7386ed99311237a662c3.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "gz-media-7-basic-label-84mm-2010-01"
+      ],
+      "path": ".cache/record-plant/sources/gz-media-gd17e-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 136366,
+      "sha256": "f8b8eced1f9873379c7207b7b01734441fb95f70057371c4c6333860ab83bd87",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "gz-media-gd17e-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 839.055,
+              "heightPt": 592.441,
+              "widthMm": 296,
+              "heightMm": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gz-media-gd30e-pdf",
+      "title": "GZ Media GD30E.pdf",
+      "url": "https://secure.gzmedia.eu/vykresova-dokumentace/Files/GD30E_97fd16cc9359d8cde7a9f3ae27c42dd7.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "gz-media-12-basic-label-100mm-2010-01"
+      ],
+      "path": ".cache/record-plant/sources/gz-media-gd30e-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 136337,
+      "sha256": "943559bb8278f3443b3498a74a87d6f2a531b8e8d5d5957dda455b36c18f3d2b",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "gz-media-gd30e-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 839.055,
+              "heightPt": 592.441,
+              "widthMm": 296,
+              "heightMm": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hellbender-7inchsmalltemplate-hellbender-pdf",
+      "title": "Hellbender 7InchSMALLTemplate_HELLBENDER.pdf",
+      "url": "https://cdn.shopify.com/s/files/1/0593/3137/9286/files/7InchSMALLTemplate_HELLBENDER.pdf?v=1720725852",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "hellbender-7-small-hole-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/hellbender-7inchsmalltemplate-hellbender-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 915118,
+      "sha256": "a9f9ec03e2622fca29820130906437074a1ac45aa733cfe22ea3e42cd4ebca51",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "hellbender-7inchsmalltemplate-hellbender-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hellbender-vinyl-10inchlabel-pdf",
+      "title": "Hellbender Vinyl_10inchlabel.pdf",
+      "url": "https://cdn.shopify.com/s/files/1/0593/3137/9286/files/Vinyl_10inchlabel.pdf?v=1728995647",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "hellbender-10-12-center-label-4in-2024-10"
+      ],
+      "path": ".cache/record-plant/sources/hellbender-vinyl-10inchlabel-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 101572,
+      "sha256": "1e48f2a617a90615d23ee6b841ec27ddc68fbb1636f6da7eb985757d15abf4ab",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "hellbender-vinyl-10inchlabel-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 505,
+              "heightPt": 613,
+              "widthMm": 178.153,
+              "heightMm": 216.253
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "memphis-record-pressing-7in-sp-label-template-gd17e-1-zip",
+      "title": "Memphis Record Pressing 7in_SP_Label_Template_GD17E_1.zip",
+      "url": "https://memphisrp.com/media/7in_SP_Label_Template_GD17E_1.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "memphis-record-pressing-7-center-label-gd17e-2019-01"
+      ],
+      "path": ".cache/record-plant/sources/memphis-record-pressing-7in-sp-label-template-gd17e-1-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 447970,
+      "sha256": "167faa72e2fe6effa41681762fff0e2e01949f7a45455a9db9cdd4aa86322e2e",
+      "archiveEntries": [
+        "7in_SP_Label_Template_GD17E.pdf",
+        "__MACOSX/",
+        "__MACOSX/._7in_SP_Label_Template_GD17E.pdf",
+        "7in_SP_Label_Template_GD17E.indd",
+        "__MACOSX/._7in_SP_Label_Template_GD17E.indd",
+        "7in_SP_Label_Template_GD17E.idml",
+        "__MACOSX/._7in_SP_Label_Template_GD17E.idml",
+        "7in_SP_Label_Template_GD17E_1.eps",
+        "__MACOSX/._7in_SP_Label_Template_GD17E_1.eps",
+        "7in_SP_Label_Template_GD17E_2.eps",
+        "__MACOSX/._7in_SP_Label_Template_GD17E_2.eps"
+      ],
+      "pdfs": [
+        {
+          "entry": "7in_SP_Label_Template_GD17E.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 360,
+              "heightPt": 360,
+              "widthMm": 127,
+              "heightMm": 127
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._7in_SP_Label_Template_GD17E.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "new-orleans-record-press-norp-centerlabel-pdf",
+      "title": "New Orleans Record Press NORP-centerlabel.pdf",
+      "url": "https://www.neworleansrecordpress.com/resources/NORP-centerlabel.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "new-orleans-record-press-12-center-label-4in-low-run"
+      ],
+      "path": ".cache/record-plant/sources/new-orleans-record-press-norp-centerlabel-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 296106,
+      "sha256": "3652ffde20c7afe85c7bde97122e0a3c7e28ecc20278859d90cf208c59a00fd2",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "new-orleans-record-press-norp-centerlabel-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 505,
+              "heightPt": 613,
+              "widthMm": 178.153,
+              "heightMm": 216.253
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-orleans-record-press-norp-seveninch-centerlabels-largehole-pdf",
+      "title": "New Orleans Record Press NORP-seveninch-centerlabels-largehole.pdf",
+      "url": "https://www.neworleansrecordpress.com/resources/NORP-seveninch-centerlabels-largehole.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "new-orleans-record-press-7-large-hole-center-label-3p625in"
+      ],
+      "path": ".cache/record-plant/sources/new-orleans-record-press-norp-seveninch-centerlabels-largehole-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 731900,
+      "sha256": "4ba23c540477b8351b0a3deceb6014dee7dadf396165917b1f1e96dcff0a7e7c",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "new-orleans-record-press-norp-seveninch-centerlabels-largehole-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 505,
+              "heightPt": 613,
+              "widthMm": 178.153,
+              "heightMm": 216.253
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-orleans-record-press-norp-seveninch-centerlabels-smallhole-pdf",
+      "title": "New Orleans Record Press NORP-seveninch-centerlabels-smallhole.pdf",
+      "url": "https://www.neworleansrecordpress.com/resources/NORP-seveninch-centerlabels-smallhole.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "new-orleans-record-press-7-small-hole-center-label-3p625in"
+      ],
+      "path": ".cache/record-plant/sources/new-orleans-record-press-norp-seveninch-centerlabels-smallhole-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 730287,
+      "sha256": "bd807f722ec65266c02fcfbe2e04c32fddf9979fadf66170d0529266d0357263",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "new-orleans-record-press-norp-seveninch-centerlabels-smallhole-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 505,
+              "heightPt": 613,
+              "widthMm": 178.153,
+              "heightMm": 216.253
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optimal-media-12inch-label-en-pdf",
+      "title": "optimal media 12inch_Label_en.pdf",
+      "url": "https://www.optimal-media.com/wp-content/uploads/12inch_Label_en.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "optimal-media-12-label-100mm"
+      ],
+      "path": ".cache/record-plant/sources/optimal-media-12inch-label-en-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1854613,
+      "sha256": "5e010adafac0d4784c684134bfead2a11a923d2ddb6fe9a6ab0164c649bc65b9",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "optimal-media-12inch-label-en-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pallas-group-10-in-lp-label-product-specification",
+      "title": "Pallas Group 10 in LP-Label Product Specification",
+      "url": "https://www.pallasgroup.de/wp-content/uploads/01.PALLAS_10inch_label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pallas-group-10-label-2025-10"
+      ],
+      "path": ".cache/record-plant/sources/pallas-group-10-in-lp-label-product-specification.pdf",
+      "contentType": "application/pdf",
+      "bytes": 3619010,
+      "sha256": "1bba96d831392c02cee927dec8ab40cd95304dd2e5adce0dc57f059b4201d1df",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "pallas-group-10-in-lp-label-product-specification.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 728.504,
+              "heightPt": 515.103,
+              "widthMm": 257,
+              "heightMm": 181.717
+            },
+            {
+              "widthPt": 300.472,
+              "heightPt": 300.472,
+              "widthMm": 106,
+              "heightMm": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pallas-group-12-in-lp-label-product-specification",
+      "title": "Pallas Group 12 in LP-Label Product Specification",
+      "url": "https://www.pallasgroup.de/wp-content/uploads/01.PALLAS_12inch_label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pallas-group-12-label-2025-10"
+      ],
+      "path": ".cache/record-plant/sources/pallas-group-12-in-lp-label-product-specification.pdf",
+      "contentType": "application/pdf",
+      "bytes": 3617763,
+      "sha256": "d7c88bd86b894df02f5f98819e068544827cb14dafe1d89f23d672149e5d1474",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "pallas-group-12-in-lp-label-product-specification.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 728.504,
+              "heightPt": 515.103,
+              "widthMm": 257,
+              "heightMm": 181.717
+            },
+            {
+              "widthPt": 300.472,
+              "heightPt": 300.472,
+              "widthMm": 106,
+              "heightMm": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pallas-group-7-in-lp-label-product-specification",
+      "title": "Pallas Group 7 in LP-Label Product Specification",
+      "url": "https://www.pallasgroup.de/wp-content/uploads/01.PALLAS_7inch_label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pallas-group-7-small-hole-label-2025-10",
+        "pallas-group-7-big-hole-label-2025-10"
+      ],
+      "path": ".cache/record-plant/sources/pallas-group-7-in-lp-label-product-specification.pdf",
+      "contentType": "application/pdf",
+      "bytes": 3786367,
+      "sha256": "cf020b46b7db0b7e2c2ea323e0a33e2cfc9eb22679a490c2905a2d0474da9e26",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "pallas-group-7-in-lp-label-product-specification.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            },
+            {
+              "widthPt": 277.793,
+              "heightPt": 277.795,
+              "widthMm": 97.999,
+              "heightMm": 98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phono-press-etich12-pdf",
+      "title": "Phono-Press etich12.pdf",
+      "url": "https://www.phonopress.it/download/etich12.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "phono-press-12-label-101mm"
+      ],
+      "path": ".cache/record-plant/sources/phono-press-etich12-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 129365,
+      "sha256": "13c08d04fb8903186bdadc6e66aa8ea747a4bf5261723d78360fa845ceab55a2",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "phono-press-etich12-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 406.5,
+              "heightPt": 583.5,
+              "widthMm": 143.404,
+              "heightMm": 205.846
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phono-press-etich7-pdf",
+      "title": "Phono-Press etich7.pdf",
+      "url": "https://www.phonopress.it/download/etich7.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "phono-press-7-label-92mm-small-or-large-hole"
+      ],
+      "path": ".cache/record-plant/sources/phono-press-etich7-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 548610,
+      "sha256": "de4ae5eaa2fbee9b67d09dfc4fe2e4eb92b32b52cc23c8df9c6bf75e7cb819d0",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "phono-press-etich7-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 428.031,
+              "heightPt": 428.031,
+              "widthMm": 151,
+              "heightMm": 151
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pirates-press-vinyl-technical-conditions",
+      "title": "Pirates Press Vinyl Technical Conditions",
+      "url": "https://www.piratespress.com/products/vinyl-technical-conditions/",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pirates-press-7-basic-label-84mm",
+        "pirates-press-10-12-basic-label-100mm",
+        "pirates-press-12-picture-disc-label-292mm"
+      ],
+      "path": ".cache/record-plant/sources/pirates-press-vinyl-technical-conditions.bin",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 165627,
+      "sha256": "e8abddb3a2591956a9270cb5b4fa82bc56417dd63a86d59d02c718d5927fe705",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "pitch-beats-templates-page",
+      "title": "Pitch Beats templates page",
+      "url": "https://pitchbeats.com/templates/",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pitch-beats-12-label-100mm",
+        "pitch-beats-7-label-90mm"
+      ],
+      "path": ".cache/record-plant/sources/pitch-beats-templates-page.bin",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 94542,
+      "sha256": "a4af795b5c4dcf21239440784a03ccb6b262b5bf8b6f725f6736a0067e2a50d7",
+      "archiveEntries": [],
+      "pdfs": []
+    },
+    {
+      "id": "polvinyl-en-de-label-12inch-2022-pdf",
+      "title": "Polvinyl EN-DE label 12inch 2022.pdf",
+      "url": "https://polvinyl.com/wp-content/uploads/2024/07/Polvinyl_EN-DE_label_12inch_2022.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "polvinyl-12-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/polvinyl-en-de-label-12inch-2022-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 388913,
+      "sha256": "a09c59fdb493a61a0647ff8a40e480ef309274285165fed33adf7de22a981bbb",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "polvinyl-en-de-label-12inch-2022-pdf.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "polvinyl-en-de-label-7inch-large-center-hole-2022-pdf",
+      "title": "Polvinyl EN-DE label 7inch large center hole 2022.pdf",
+      "url": "https://polvinyl.com/wp-content/uploads/2024/07/Polvinyl_EN-DE_label_7inch_gm_2022.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "polvinyl-7-large-center-hole-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/polvinyl-en-de-label-7inch-large-center-hole-2022-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 379224,
+      "sha256": "7ae96b82d4611506990c6eb485614a7cadc3d5f419c9660d0adbc7f1b555a41a",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "polvinyl-en-de-label-7inch-large-center-hole-2022-pdf.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "polvinyl-en-de-label-7inch-small-center-hole-2022-pdf",
+      "title": "Polvinyl EN-DE label 7inch small center hole 2022.pdf",
+      "url": "https://polvinyl.com/wp-content/uploads/2024/07/Polvinyl_EN-DE_label_7inch_km_2022.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "polvinyl-7-small-center-hole-label-2024-07"
+      ],
+      "path": ".cache/record-plant/sources/polvinyl-en-de-label-7inch-small-center-hole-2022-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 352362,
+      "sha256": "a03d3707c326c23ed8a1891079f2440d743d7d448e5e08d9d57a19e88a9ffe13",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "polvinyl-en-de-label-7inch-small-center-hole-2022-pdf.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "precision-record-pressing-prp-10-label-10-l001-a1-pdf",
+      "title": "Precision Record Pressing PRP 10 Label-10-L001-A1.pdf",
+      "url": "https://www.datocms-assets.com/146666/1739465679-prp-10-label-10-l001-a1.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "precision-record-pressing-10-center-label-10-l001-a1"
+      ],
+      "path": ".cache/record-plant/sources/precision-record-pressing-prp-10-label-10-l001-a1-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1732198,
+      "sha256": "c17599989d56838ec3fc67a77d9a61c8e77abf85dfb1dc4975f34b82889c8ccd",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "precision-record-pressing-prp-10-label-10-l001-a1-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 729.338,
+              "heightPt": 585.338,
+              "widthMm": 257.294,
+              "heightMm": 206.494
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precision-record-pressing-prp-12-label-ab-12-l001-a3-pdf",
+      "title": "Precision Record Pressing PRP 12 Label AB 12-L001-A3.pdf",
+      "url": "https://www.datocms-assets.com/146666/1738546579-prp-12-label-ab-12-l001-a3.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "precision-record-pressing-12-center-label-ab-12-l001-a3"
+      ],
+      "path": ".cache/record-plant/sources/precision-record-pressing-prp-12-label-ab-12-l001-a3-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1497996,
+      "sha256": "1da4de328c8992858b7953194301469b2f66ca7db416884432fc74785185251b",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "precision-record-pressing-prp-12-label-ab-12-l001-a3-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 714.085,
+              "heightPt": 575.333,
+              "widthMm": 251.913,
+              "heightMm": 202.965
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precision-record-pressing-prp-7-large-hole-label-7-l002-a1-pdf",
+      "title": "Precision Record Pressing PRP 7 Large Hole Label-7-L002-A1.pdf",
+      "url": "https://www.datocms-assets.com/146666/1738546476-prp-7-large-hole-label-7-l002-a1.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "precision-record-pressing-7-large-hole-label-7-l002-a1"
+      ],
+      "path": ".cache/record-plant/sources/precision-record-pressing-prp-7-large-hole-label-7-l002-a1-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 2918442,
+      "sha256": "0dbcb240dcba2a61a9072216403055a8c08e6b15f6d0ea0a6532f8c30950dd35",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "precision-record-pressing-prp-7-large-hole-label-7-l002-a1-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 683.49,
+              "heightPt": 581,
+              "widthMm": 241.12,
+              "heightMm": 204.964
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precision-record-pressing-prp-7-small-hole-label-7-l001-a1-pdf",
+      "title": "Precision Record Pressing PRP 7 Small Hole Label-7-L001-A1.pdf",
+      "url": "https://www.datocms-assets.com/146666/1738546476-prp-7-small-hole-label-7-l001-a1.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "precision-record-pressing-7-small-hole-label-7-l001-a1"
+      ],
+      "path": ".cache/record-plant/sources/precision-record-pressing-prp-7-small-hole-label-7-l001-a1-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 2914802,
+      "sha256": "f9fa8a6758519675786b9fd69d60bf1aa9127562a8965ead0ea24d4938728483",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "precision-record-pressing-prp-7-small-hole-label-7-l001-a1-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 683.49,
+              "heightPt": 581,
+              "widthMm": 241.12,
+              "heightMm": 204.964
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "press-on-vinyl-7inch-centre-label-side-a-template-pdf",
+      "title": "Press On Vinyl 7inch CENTRE LABEL SIDE A TEMPLATE.pdf",
+      "url": "https://pressonvinyl.com/wp-content/uploads/2024/03/7inch-CENTRE-LABEL-SIDE-A-TEMPLATE.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "press-on-vinyl-7-centre-label-2024-03"
+      ],
+      "path": ".cache/record-plant/sources/press-on-vinyl-7inch-centre-label-side-a-template-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 875108,
+      "sha256": "21ac26ae355fe19156dee98c14bd0d19b5da6584e0747c28f516a99c6504881d",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "press-on-vinyl-7inch-centre-label-side-a-template-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 315.12,
+              "heightPt": 315.12,
+              "widthMm": 111.167,
+              "heightMm": 111.167
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pressing-business-12-inch-record-label-2355-zip",
+      "title": "Pressing Business 12-inch record label (2355).zip",
+      "url": "https://pressingbusiness.co/s/12-inch-record-label-2355.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pressing-business-12-center-label-2355-2020-11"
+      ],
+      "path": ".cache/record-plant/sources/pressing-business-12-inch-record-label-2355-zip.zip",
+      "contentType": "application/x-zip-compressed",
+      "bytes": 180663,
+      "sha256": "c8288dbd46458c08faa21db0bdae0e25354589a7d0a1ceb8c887fbd899571516",
+      "archiveEntries": [
+        "12-inch record label (2355)/12-inch record label (2355).eps",
+        "12-inch record label (2355)/12-inch record label (2355).pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "12-inch record label (2355)/12-inch record label (2355).pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 590.542,
+              "widthMm": 297,
+              "heightMm": 208.33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pressing-business-7-inch-record-label-2408-zip",
+      "title": "Pressing Business 7-inch record label (2408).zip",
+      "url": "https://pressingbusiness.co/s/7-inch-record-label-2408.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "pressing-business-7-small-hole-center-label-2408-2020-11"
+      ],
+      "path": ".cache/record-plant/sources/pressing-business-7-inch-record-label-2408-zip.zip",
+      "contentType": "application/x-zip-compressed",
+      "bytes": 179980,
+      "sha256": "53c03e274e4bd88ef8475c7e41079e33af3d7c46fa8132536a30fff4561c3cb8",
+      "archiveEntries": [
+        "7-inch record label (2408)/7-inch record label (2408).eps",
+        "7-inch record label (2408)/7-inch record label (2408).pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "7-inch record label (2408)/7-inch record label (2408).pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 590.542,
+              "widthMm": 297,
+              "heightMm": 208.33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r-a-n-d-muzik-label-12inch-2019-pdf",
+      "title": "R.A.N.D. Muzik label_12inch_2019.pdf",
+      "url": "https://www.randmuzik.de/media/label_12inch_2019.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "rand-muzik-12-label-2019"
+      ],
+      "path": ".cache/record-plant/sources/r-a-n-d-muzik-label-12inch-2019-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 346281,
+      "sha256": "fe20b1c2ebee399a015204be24f92b771179e53d7aca68434cf36323f75c0820",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "r-a-n-d-muzik-label-12inch-2019-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 700.158,
+              "widthMm": 297,
+              "heightMm": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r-a-n-d-muzik-label-7inch-gm-2019-pdf",
+      "title": "R.A.N.D. Muzik label_7inch_gm_2019.pdf",
+      "url": "https://www.randmuzik.de/media/label_7inch_gm_2019.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "rand-muzik-7-large-hole-label-2019"
+      ],
+      "path": ".cache/record-plant/sources/r-a-n-d-muzik-label-7inch-gm-2019-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 375940,
+      "sha256": "b8cd21e142e4c1e119dbf153940657165e862645cb87523045e74ebcdf48fc1c",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "r-a-n-d-muzik-label-7inch-gm-2019-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 700.158,
+              "widthMm": 297,
+              "heightMm": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r-a-n-d-muzik-label-7inch-km-2019-pdf",
+      "title": "R.A.N.D. Muzik label_7inch_km_2019.pdf",
+      "url": "https://www.randmuzik.de/media/label_7inch_km_2019.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "rand-muzik-7-small-hole-label-2019"
+      ],
+      "path": ".cache/record-plant/sources/r-a-n-d-muzik-label-7inch-km-2019-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 347772,
+      "sha256": "ab94d37cbff87570c9030faadefca4ceb043ff063d96a49994d3d10bf46ac518",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "r-a-n-d-muzik-label-7inch-km-2019-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 700.158,
+              "widthMm": 297,
+              "heightMm": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "record-industry-ri-12inch-3mm-v92012-pdf",
+      "title": "Record Industry RI_12inch_3mm_v92012.pdf",
+      "url": "https://mediatemplates.sonymusic.com/uploads/template/pdf/227/RI_12inch_3mm_v92012.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "record-industry-12-jacket-3mm-spine-v92012"
+      ],
+      "path": ".cache/record-plant/sources/record-industry-ri-12inch-3mm-v92012-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 463628,
+      "sha256": "e0ad084360ab0b903629475eb39bbbb804b65e53b0c0380753cae6528842fd8a",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "record-industry-ri-12inch-3mm-v92012-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1890.71,
+              "heightPt": 997.795,
+              "widthMm": 667,
+              "heightMm": 352
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skivtryck-label-12-inch-pdf",
+      "title": "Skivtryck label_12_inch.pdf",
+      "url": "https://skivtryck.se/wp-content/uploads/2025/09/label_12_inch.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "skivtryck-12-label-2025-09"
+      ],
+      "path": ".cache/record-plant/sources/skivtryck-label-12-inch-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 899834,
+      "sha256": "3c0d8c5fb2ec1460aa15f11660c54176bd75364e62ebefb07adb6e8d3bb45c81",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "skivtryck-label-12-inch-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 824.882,
+              "heightPt": 708.661,
+              "widthMm": 291,
+              "heightMm": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smashed-plastic-7-inch-large-20240513t113934z-001-zip",
+      "title": "Smashed Plastic 7-INCH-LARGE-20240513T113934Z-001.zip",
+      "url": "https://smashedplastic.com/wp-content/uploads/2024/06/7-INCH-LARGE-20240513T113934Z-001.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "smashed-plastic-7-large-hole-center-label-2024-06"
+      ],
+      "path": ".cache/record-plant/sources/smashed-plastic-7-inch-large-20240513t113934z-001-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 3729856,
+      "sha256": "145125dd08822be3f7fbd70b347d2d58bfa6a13d363870a7bfb96d9311907b7b",
+      "archiveEntries": [
+        "7 INCH LARGE/7InchLARGETemplate_Smashed.ai",
+        "7 INCH LARGE/7InchLARGETemplate_Smashed.pdf",
+        "7 INCH LARGE/7InchLARGETemplate_Smashed.psd",
+        "7 INCH LARGE/7inch_LRG_Template_Smashed.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7 INCH LARGE/7InchLARGETemplate_Smashed.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smashed-plastic-7-inch-small-20240513t113950z-001-zip",
+      "title": "Smashed Plastic 7-INCH-SMALL-20240513T113950Z-001.zip",
+      "url": "https://smashedplastic.com/wp-content/uploads/2024/06/7-INCH-SMALL-20240513T113950Z-001.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "smashed-plastic-7-small-hole-center-label-2024-06"
+      ],
+      "path": ".cache/record-plant/sources/smashed-plastic-7-inch-small-20240513t113950z-001-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 3621686,
+      "sha256": "79cd2d02e211ae3aec2855f9070640ed81a9024ce1bd2ecfd3280a15809c4ee1",
+      "archiveEntries": [
+        "7 INCH SMALL/7InchSMALLTemplate_Smashed.pdf",
+        "7 INCH SMALL/7InchSMALLTemplate_Smashed.psd",
+        "7 INCH SMALL/7InchSMALLTemplate_Smashed.ai",
+        "7 INCH SMALL/7inch_SML_Template_Smashed.indd"
+      ],
+      "pdfs": [
+        {
+          "entry": "7 INCH SMALL/7InchSMALLTemplate_Smashed.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 792,
+              "heightPt": 612,
+              "widthMm": 279.4,
+              "heightMm": 215.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sonic-wax-pressing-12-label-zip",
+      "title": "Sonic Wax Pressing 12__Label.zip",
+      "url": "https://cdn.shopify.com/s/files/1/0779/4878/0859/files/12__Label.zip?v=1688307583",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sonic-wax-12-label-2up-106mm-2022-03"
+      ],
+      "path": ".cache/record-plant/sources/sonic-wax-pressing-12-label-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 2695192,
+      "sha256": "294fc310fb304d69dda32804175c7149ba6b7d43e2353650b904304ceb59e454",
+      "archiveEntries": [
+        "12inch Lable Template 2up 106mm.eps",
+        "__MACOSX/._12inch Lable Template 2up 106mm.eps",
+        "12inch Lable Template 2up 106mm.pdf",
+        "__MACOSX/._12inch Lable Template 2up 106mm.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "12inch Lable Template 2up 106mm.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 357.165,
+              "heightPt": 657.638,
+              "widthMm": 126,
+              "heightMm": 232
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._12inch Lable Template 2up 106mm.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "sonic-wax-pressing-12-sleeve-3mm-spine-zip",
+      "title": "Sonic Wax Pressing 12__Sleeve_3mm_Spine.zip",
+      "url": "https://cdn.shopify.com/s/files/1/0779/4878/0859/files/12__Sleeve_3mm_Spine.zip?v=1688307723",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sonic-wax-12-sleeve-3mm-spine-2022-03"
+      ],
+      "path": ".cache/record-plant/sources/sonic-wax-pressing-12-sleeve-3mm-spine-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 2078942,
+      "sha256": "e0ffc45e17d6d55c936e66ef3574abc63fcb1832fd950acba19191cf30c87976",
+      "archiveEntries": [
+        "12 Sleeve 633x315 (3mm spine).eps",
+        "__MACOSX/._12 Sleeve 633x315 (3mm spine).eps",
+        "12 Sleeve 633x315 (3mm spine).pdf",
+        "__MACOSX/._12 Sleeve 633x315 (3mm spine).pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "12 Sleeve 633x315 (3mm spine).pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1858.68,
+              "heightPt": 957.259,
+              "widthMm": 655.701,
+              "heightMm": 337.7
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._12 Sleeve 633x315 (3mm spine).pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "sonic-wax-pressing-7-sleeve-3mm-spine-zip",
+      "title": "Sonic Wax Pressing 7__Sleeve_3mm_Spine.zip",
+      "url": "https://cdn.shopify.com/s/files/1/0779/4878/0859/files/7__Sleeve_3mm_Spine.zip?v=1688307449",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sonic-wax-7-sleeve-3mm-spine-2022-03"
+      ],
+      "path": ".cache/record-plant/sources/sonic-wax-pressing-7-sleeve-3mm-spine-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 1945855,
+      "sha256": "81a2716e8edf077e3068b00ba71741d9d6ed2833130225bd4d0751cc34e2f1ac",
+      "archiveEntries": [
+        "7inch Sleeve185mm 3mm Spine.eps",
+        "__MACOSX/._7inch Sleeve185mm 3mm Spine.eps",
+        "7inch Sleeve185mm 3mm Spine.pdf",
+        "__MACOSX/._7inch Sleeve185mm 3mm Spine.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "7inch Sleeve185mm 3mm Spine.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 1121.67,
+              "heightPt": 588.755,
+              "widthMm": 395.7,
+              "heightMm": 207.7
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._7inch Sleeve185mm 3mm Spine.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "sonic-wax-pressing-7-uk-label-zip",
+      "title": "Sonic Wax Pressing 7__UK_Label.zip",
+      "url": "https://cdn.shopify.com/s/files/1/0779/4878/0859/files/7__UK_Label.zip?v=1688307449",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sonic-wax-7-uk-label-2up-90mm-2022-03"
+      ],
+      "path": ".cache/record-plant/sources/sonic-wax-pressing-7-uk-label-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 2905380,
+      "sha256": "8fa97f720bab46471bc5f082a51d5acae7e0855db2b46b29846842180c1f64de",
+      "archiveEntries": [
+        "7inch UK Label Template 2up 90mm.eps",
+        "__MACOSX/._7inch UK Label Template 2up 90mm.eps",
+        "7inch UK Label Template 2up 90mm.pdf",
+        "__MACOSX/._7inch UK Label Template 2up 90mm.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "7inch UK Label Template 2up 90mm.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 357.165,
+              "heightPt": 657.638,
+              "widthMm": 126,
+              "heightMm": 232
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._7inch UK Label Template 2up 90mm.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "sonic-wax-pressing-7-us-label-zip",
+      "title": "Sonic Wax Pressing 7__US_Label.zip",
+      "url": "https://cdn.shopify.com/s/files/1/0779/4878/0859/files/7__US_Label.zip?v=1688307449",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "sonic-wax-7-us-label-2up-96mm-2022-03"
+      ],
+      "path": ".cache/record-plant/sources/sonic-wax-pressing-7-us-label-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 3005390,
+      "sha256": "954f739caf3f1df01b06cb526a2a657ec917a5d41e9380c2c3a4d46dfafc0dcc",
+      "archiveEntries": [
+        "American 7inch Label Template.eps",
+        "__MACOSX/._American 7inch Label Template.eps",
+        "American 7inch Label Template.pdf",
+        "__MACOSX/._American 7inch Label Template.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "American 7inch Label Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 385.512,
+              "heightPt": 657.638,
+              "widthMm": 136,
+              "heightMm": 232
+            }
+          ]
+        },
+        {
+          "entry": "__MACOSX/._American 7inch Label Template.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "standard-vinyl-10inch-labels-pdf",
+      "title": "Standard Vinyl 10inch_Labels.pdf",
+      "url": "https://standardvinyl.com/wp-content/uploads/2018/07/10inch_Labels.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "standard-vinyl-10-center-label-4in-2018-07"
+      ],
+      "path": ".cache/record-plant/sources/standard-vinyl-10inch-labels-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 165248,
+      "sha256": "a845d64ff81247740ce5cabc6ed0d2e1b2c52210015d01240d525ab6b7952108",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "standard-vinyl-10inch-labels-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 397,
+              "heightPt": 499.453,
+              "widthMm": 140.053,
+              "heightMm": 176.196
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard-vinyl-12inch-labels-pdf",
+      "title": "Standard Vinyl 12inch_Labels.pdf",
+      "url": "https://standardvinyl.com/wp-content/uploads/2022/06/12inch_Labels.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "standard-vinyl-12-center-label-4in-2022-06"
+      ],
+      "path": ".cache/record-plant/sources/standard-vinyl-12inch-labels-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 452218,
+      "sha256": "e9d36147d5ac7a571644c99597aa29219edb91c75a7344b130e98feb9f4e72b8",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "standard-vinyl-12inch-labels-pdf.pdf",
+          "pageBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "standard-vinyl-7inch-large-hole-labels-pdf",
+      "title": "Standard Vinyl 7inch_Large-Hole_Labels.pdf",
+      "url": "https://standardvinyl.com/wp-content/uploads/2018/07/7inch_Large-Hole_Labels.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "standard-vinyl-7-large-hole-label-2018-07"
+      ],
+      "path": ".cache/record-plant/sources/standard-vinyl-7inch-large-hole-labels-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 164049,
+      "sha256": "607e84359bd6654fc61c6ad9b38e866ef9fe90c83e8070cc8ba4126df874ec41",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "standard-vinyl-7inch-large-hole-labels-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 335.555,
+              "heightPt": 437.458,
+              "widthMm": 118.376,
+              "heightMm": 154.325
+            },
+            {
+              "widthPt": 335.555,
+              "heightPt": 437.448,
+              "widthMm": 118.376,
+              "heightMm": 154.322
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard-vinyl-7inch-small-hole-labels-pdf",
+      "title": "Standard Vinyl 7inch_Small-Hole_Labels.pdf",
+      "url": "https://standardvinyl.com/wp-content/uploads/2018/10/7inch_Small-Hole_Labels.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "standard-vinyl-7-small-hole-label-2018-10"
+      ],
+      "path": ".cache/record-plant/sources/standard-vinyl-7inch-small-hole-labels-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 524206,
+      "sha256": "178cdcbb033b7e3cf8ec4d350416b187a4c769a806db2242105daf1c055d94b4",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "standard-vinyl-7inch-small-hole-labels-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 396,
+              "heightPt": 504,
+              "widthMm": 139.7,
+              "heightMm": 177.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-jungle-record-press-12inch-label-template-a-b-106mm-pdf",
+      "title": "The Jungle Record Press 12inch Label Template A&B 106mm.pdf",
+      "url": "https://cdn.shopify.com/s/files/1/0699/2360/2699/files/12inch_Label_Template_A_B_106mm.pdf?v=1723155688",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "the-jungle-record-press-12-label-ab-106mm-2023-10"
+      ],
+      "path": ".cache/record-plant/sources/the-jungle-record-press-12inch-label-template-a-b-106mm-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 26854,
+      "sha256": "9d3bee6230ab215d8b4d7f6ab5ce7ac200e5564b215380aeea7ad4f00eee77f5",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "the-jungle-record-press-12inch-label-template-a-b-106mm-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 357.165,
+              "heightPt": 657.638,
+              "widthMm": 126,
+              "heightMm": 232
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "united-record-pressing-urp-12-template-zip",
+      "title": "United Record Pressing URP_12_Template.zip",
+      "url": "https://customers.urpressing.com/templates/URP_12_Template.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "united-record-pressing-12-center-label-2010-02"
+      ],
+      "path": ".cache/record-plant/sources/united-record-pressing-urp-12-template-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 936330,
+      "sha256": "9ffbb054084e10ec0e64594b0a944c97b82c43f0749a9e2d63e1489c59c71dbe",
+      "archiveEntries": [
+        "URP_12_Template/._.DS_Store",
+        "URP_12_Template/._12inchtemplate.eps",
+        "URP_12_Template/._URP_12_LPtemplate.indd",
+        "URP_12_Template/._URP_12_LPtemplate.qxd",
+        "URP_12_Template/.DS_Store",
+        "URP_12_Template/12inchtemplate.eps",
+        "URP_12_Template/12inchtemplate.pdf",
+        "URP_12_Template/URP_12_LPtemplate.indd",
+        "URP_12_Template/URP_12_LPtemplate.qxd"
+      ],
+      "pdfs": [
+        {
+          "entry": "URP_12_Template/12inchtemplate.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 678,
+              "heightPt": 858,
+              "widthMm": 239.183,
+              "heightMm": 302.683
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "united-record-pressing-urp7inlargecenterholelabeltemplate-zip",
+      "title": "United Record Pressing URP7inLargeCenterHoleLabelTemplate.zip",
+      "url": "https://www.urpressing.com/wp-content/uploads/2025/08/URP7inLargeCenterHoleLabelTemplate.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "united-record-pressing-7-large-hole-label-2025-08"
+      ],
+      "path": ".cache/record-plant/sources/united-record-pressing-urp7inlargecenterholelabeltemplate-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 1372735,
+      "sha256": "64f6ba45f5fb78c052eff567724ddb6f30a476ab53ff137b319f34daf0e8bc53",
+      "archiveEntries": [
+        "URP 7in Large Center Hole Label Template/",
+        "URP 7in Large Center Hole Label Template/URP 7in Large Center Hole Labels TEMPLATE.eps",
+        "URP 7in Large Center Hole Label Template/URP 7in Large Center Hole Labels TEMPLATE.indd",
+        "URP 7in Large Center Hole Label Template/URP 7in Large Center Hole Labels TEMPLATE.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "URP 7in Large Center Hole Label Template/URP 7in Large Center Hole Labels TEMPLATE.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 648,
+              "heightPt": 423,
+              "widthMm": 228.6,
+              "heightMm": 149.225
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "united-record-pressing-urp7insmallcenterholelabeltemplate-zip",
+      "title": "United Record Pressing URP7inSmallCenterHoleLabelTemplate.zip",
+      "url": "https://www.urpressing.com/wp-content/uploads/2025/08/URP7inSmallCenterHoleLabelTemplate.zip",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "united-record-pressing-7-small-hole-label-2025-08"
+      ],
+      "path": ".cache/record-plant/sources/united-record-pressing-urp7insmallcenterholelabeltemplate-zip.zip",
+      "contentType": "application/zip",
+      "bytes": 1363557,
+      "sha256": "5af01a765e1a37650c55b8a16c369f5e64e90f35534c9432edbbb6615c927fd3",
+      "archiveEntries": [
+        "URP 7in Small Center Hole Label Template/",
+        "URP 7in Small Center Hole Label Template/URP 7in Small Center Hole Label Template.eps",
+        "URP 7in Small Center Hole Label Template/URP 7in Small Center Hole Label Template.indd",
+        "URP 7in Small Center Hole Label Template/URP 7in Small Center Hole Label Template.pdf"
+      ],
+      "pdfs": [
+        {
+          "entry": "URP 7in Small Center Hole Label Template/URP 7in Small Center Hole Label Template.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 648,
+              "heightPt": 423,
+              "widthMm": 228.6,
+              "heightMm": 149.225
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinylpressing-com-au-vinyl-10-or-12-inch-label-pdf",
+      "title": "VinylPressing.com.au Vinyl-10-or-12-Inch-Label.pdf",
+      "url": "https://vinylpressing.com.au/wp-content/uploads/2020/02/Vinyl-10-or-12-Inch-Label.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "vinylpressing-au-10-12-label-2020-02"
+      ],
+      "path": ".cache/record-plant/sources/vinylpressing-com-au-vinyl-10-or-12-inch-label-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 133925,
+      "sha256": "e3b600297d1d654e9419f18f529083d500143eb6e63487702c6c4b750b5a5cb9",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "vinylpressing-com-au-vinyl-10-or-12-inch-label-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 810.283,
+              "heightPt": 810.283,
+              "widthMm": 285.85,
+              "heightMm": 285.85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinylpressing-com-au-vinyl-12-inch-sleeve-3mm-spine",
+      "title": "VinylPressing.com.au Vinyl - 12 Inch Sleeve - 3mm spine",
+      "url": "https://vinylpressing.com.au/wp-content/uploads/2019/07/Vinyl-12-Inch-Sleeve-3mm-spine.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "vinylpressing-au-12-sleeve-3mm-spine"
+      ],
+      "path": ".cache/record-plant/sources/vinylpressing-com-au-vinyl-12-inch-sleeve-3mm-spine.pdf",
+      "contentType": "application/pdf",
+      "bytes": 496201,
+      "sha256": "faa546d53e2b2ab2b102b6b8ceb89ad5e4ac89a05a0bbd8b68a4b6194b794d85",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "vinylpressing-com-au-vinyl-12-inch-sleeve-3mm-spine.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 2264.5,
+              "heightPt": 1455.98,
+              "widthMm": 798.865,
+              "heightMm": 513.637
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xvinylx-12inch-labels-pdf",
+      "title": "XVINYLX 12inch_labels.pdf",
+      "url": "https://xvinylx.com/templates/12inch_labels/12inch_labels.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "xvinylx-12-center-label-gd30e-2020-03"
+      ],
+      "path": ".cache/record-plant/sources/xvinylx-12inch-labels-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 149830,
+      "sha256": "a8be53189d8fb82d4c7816d5135140b851eb3c23823ff5612f237c3e3ad3e128",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "xvinylx-12inch-labels-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xvinylx-7inch-labels-bighole-pdf",
+      "title": "XVINYLX 7inch_labels_bigHole.pdf",
+      "url": "https://xvinylx.com/templates/7inch_labels/7inch_labels_bigHole.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "xvinylx-7-big-hole-center-label-gd17e-2017-09"
+      ],
+      "path": ".cache/record-plant/sources/xvinylx-7inch-labels-bighole-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 38554,
+      "sha256": "1f296d0061802b55c9a100b99b9aaaa5a96679578701da46e1cea26bac1e57b4",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "xvinylx-7inch-labels-bighole-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xvinylx-7inch-labels-smallhole-pdf",
+      "title": "XVINYLX 7inch_labels_smallHole.pdf",
+      "url": "https://xvinylx.com/templates/7inch_labels/7inch_labels_smallHole.pdf",
+      "retrievedOn": "2026-06-04",
+      "templateIds": [
+        "xvinylx-7-small-hole-center-label-gd17e-2020-03"
+      ],
+      "path": ".cache/record-plant/sources/xvinylx-7inch-labels-smallhole-pdf.pdf",
+      "contentType": "application/pdf",
+      "bytes": 31934,
+      "sha256": "1967225bf64433a476c4c40128418f816e4525019a4bbb50948d149a57c3108b",
+      "archiveEntries": [],
+      "pdfs": [
+        {
+          "entry": "xvinylx-7inch-labels-smallhole-pdf.pdf",
+          "pageBoxes": [
+            {
+              "widthPt": 841.89,
+              "heightPt": 595.276,
+              "widthMm": 297,
+              "heightMm": 210
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
