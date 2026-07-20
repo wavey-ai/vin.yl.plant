@@ -22,7 +22,7 @@ proof overlays, manifests, record-context previews, and preflight policy.
 
 The current implementation intentionally does not create print-ready PDFs yet.
 That should be layered on top of this crate once Presser has a plant pack
-export flow. The browser remains responsible for canvas/PDF/file APIs; this
+export flow. The browser remains responsible for canvas/PDF/file APIs. This
 crate owns deterministic proof metadata and preflight policy for the supplied
 template payload. WASM exports should stay as facade calls into this crate.
 
@@ -51,7 +51,7 @@ make record-plant-registry-validate
 ```
 
 `make record-plant-refresh` runs the full sequence. The first step prepares the
-generated registry JSON from `fixtures/record-plant-registry.json`; the sync
+generated registry JSON from `fixtures/record-plant-registry.json`. The sync
 step writes the normalized collect-store seed JSON to
 `workers/collect-store/seeds/record-plant-templates.json` and the hydrated
 Plant app registry asset to
