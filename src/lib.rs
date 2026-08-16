@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use std::collections::BTreeMap;
 use std::fmt;
 use std::str::FromStr;
 
@@ -1718,6 +1719,167 @@ fn template_preflight_checks(
     ]
 }
 
+/// The curated manufacturer/template registry, exactly as committed.
+///
+/// Every consumer reads the registry from this crate. A platform that copies
+/// the JSON into its own bundle drifts from the templates the proof geometry
+/// in this crate was written against.
+pub const REGISTRY_JSON: &str = include_str!("../fixtures/record-plant-registry.json");
+
+/// Builds the registry the Plant apps consume.
+///
+/// The curated registry keeps manufacturers and templates in separate arrays.
+/// An app resolving a template's plant on every row would repeat that join in
+/// each renderer, so hydration inlines the manufacturer profile on the template
+/// and precomputes the lowercase text the supplier search matches against.
+pub fn hydrated_registry_json(generated_at: &str) -> Result<String, RecordPlantError> {
+    let registry: serde_json::Value = serde_json::from_str(REGISTRY_JSON)
+        .map_err(|error| RecordPlantError::Serialize(error.to_string()))?;
+    let templates = registry_array(&registry, "templates")?;
+    let manufacturers = registry_array(&registry, "manufacturers")?;
+
+    // Search text covers the plant and everything pressable from it, so typing a
+    // format or a product name finds the supplier as well as the template.
+    let mut template_text: BTreeMap<String, Vec<String>> = BTreeMap::new();
+    for template in templates {
+        let manufacturer_id = template_manufacturer_id(template)?;
+        let parts = template_text.entry(manufacturer_id).or_default();
+        for key in ["id", "name", "product", "kind", "version", "confidence"] {
+            parts.push(json_text(template.get(key)));
+        }
+        let requirements = template.get("requirements");
+        for key in ["preferredOutput", "outputConditionIdentifier"] {
+            parts.push(json_text(requirements.and_then(|value| value.get(key))));
+        }
+        for key in ["acceptedFormats", "colorModes"] {
+            if let Some(values) = requirements
+                .and_then(|value| value.get(key))
+                .and_then(serde_json::Value::as_array)
+            {
+                parts.extend(values.iter().map(|value| json_text(Some(value))));
+            }
+        }
+    }
+
+    let mut profiles = Vec::with_capacity(manufacturers.len());
+    for manufacturer in manufacturers {
+        let id = json_text(manufacturer.get("id"));
+        if id.is_empty() {
+            return Err(RecordPlantError::InvalidCustomTemplate(
+                "registry manufacturer is missing id".to_string(),
+            ));
+        }
+        let mut search_parts = vec![
+            json_text(manufacturer.get("id")),
+            json_text(manufacturer.get("name")),
+            json_text(manufacturer.get("countryCode")),
+            json_text(manufacturer.get("websiteUrl")),
+            json_text(manufacturer.get("contactEmail")),
+            json_text(manufacturer.get("contactUrl")),
+        ];
+        search_parts.extend(template_text.get(&id).cloned().unwrap_or_default());
+        let search_text = search_parts
+            .iter()
+            .filter(|part| !part.is_empty())
+            .map(|part| normalize_search_text(part))
+            .collect::<Vec<_>>()
+            .join(" ");
+        let mut profile = manufacturer.clone();
+        let Some(object) = profile.as_object_mut() else {
+            return Err(RecordPlantError::InvalidCustomTemplate(
+                "registry manufacturer must be an object".to_string(),
+            ));
+        };
+        object.insert(
+            "searchText".to_string(),
+            serde_json::Value::String(search_text),
+        );
+        profiles.push((id, profile));
+    }
+    // The apps render suppliers in the order this array arrives in. Fold case
+    // first so "CD Unity" files under C-D and not ahead of "Cascade" the way a
+    // raw byte comparison would put it.
+    profiles.sort_by(|(_, left), (_, right)| {
+        let left = json_text(left.get("name"));
+        let right = json_text(right.get("name"));
+        (left.to_lowercase(), left.clone()).cmp(&(right.to_lowercase(), right))
+    });
+
+    let profile_by_id: BTreeMap<&str, &serde_json::Value> = profiles
+        .iter()
+        .map(|(id, profile)| (id.as_str(), profile))
+        .collect();
+    let mut hydrated_templates = Vec::with_capacity(templates.len());
+    for template in templates {
+        let manufacturer_id = template_manufacturer_id(template)?;
+        let Some(profile) = profile_by_id.get(manufacturer_id.as_str()) else {
+            return Err(RecordPlantError::InvalidCustomTemplate(format!(
+                "registry template {} references unknown manufacturer {manufacturer_id}",
+                json_text(template.get("id"))
+            )));
+        };
+        let mut hydrated = template.clone();
+        let Some(object) = hydrated.as_object_mut() else {
+            return Err(RecordPlantError::InvalidCustomTemplate(
+                "registry template must be an object".to_string(),
+            ));
+        };
+        object.insert("manufacturerProfile".to_string(), (*profile).clone());
+        hydrated_templates.push(hydrated);
+    }
+
+    let hydrated = serde_json::json!({
+        "schemaVersion": registry.get("schemaVersion").cloned().unwrap_or(serde_json::Value::from(1)),
+        "generatedAt": generated_at,
+        "manufacturers": profiles.into_iter().map(|(_, profile)| profile).collect::<Vec<_>>(),
+        "templates": hydrated_templates,
+    });
+    serde_json::to_string(&hydrated)
+        .map_err(|error| RecordPlantError::Serialize(error.to_string()))
+}
+
+fn registry_array<'a>(
+    registry: &'a serde_json::Value,
+    key: &str,
+) -> Result<&'a Vec<serde_json::Value>, RecordPlantError> {
+    registry
+        .get(key)
+        .and_then(serde_json::Value::as_array)
+        .ok_or_else(|| {
+            RecordPlantError::InvalidCustomTemplate(format!("registry is missing {key}[]"))
+        })
+}
+
+fn template_manufacturer_id(template: &serde_json::Value) -> Result<String, RecordPlantError> {
+    let id = json_text(template.get("manufacturerId"));
+    if id.is_empty() {
+        return Err(RecordPlantError::InvalidCustomTemplate(format!(
+            "registry template {} is missing manufacturerId",
+            json_text(template.get("id"))
+        )));
+    }
+    Ok(id)
+}
+
+/// Reads a registry field as text. A null or absent field reads as empty so it
+/// drops out of search text instead of matching the literal word "null".
+fn json_text(value: Option<&serde_json::Value>) -> String {
+    match value {
+        Some(serde_json::Value::String(text)) => text.clone(),
+        Some(serde_json::Value::Number(number)) => number.to_string(),
+        Some(serde_json::Value::Bool(flag)) => flag.to_string(),
+        _ => String::new(),
+    }
+}
+
+fn normalize_search_text(value: &str) -> String {
+    value
+        .to_lowercase()
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -1823,5 +1985,75 @@ mod tests {
         assert!(json.contains(r#""manufacturer":"Test Plant""#));
         assert!(json.contains(r#""recordProfile":"45""#));
         assert!(json.contains(r#""guideSvg":"#));
+    }
+
+    #[test]
+    fn registry_json_parses_into_the_documented_two_array_shape() {
+        let registry: serde_json::Value = serde_json::from_str(REGISTRY_JSON).unwrap();
+        assert!(registry["manufacturers"].as_array().unwrap().len() > 0);
+        assert!(registry["templates"].as_array().unwrap().len() > 0);
+    }
+
+    #[test]
+    fn hydrated_registry_inlines_every_template_manufacturer_profile() {
+        let hydrated: serde_json::Value =
+            serde_json::from_str(&hydrated_registry_json("2026-01-01T00:00:00.000Z").unwrap())
+                .unwrap();
+        assert_eq!(hydrated["generatedAt"], "2026-01-01T00:00:00.000Z");
+
+        let source: serde_json::Value = serde_json::from_str(REGISTRY_JSON).unwrap();
+        let templates = hydrated["templates"].as_array().unwrap();
+        assert_eq!(templates.len(), source["templates"].as_array().unwrap().len());
+        for template in templates {
+            let profile = &template["manufacturerProfile"];
+            assert_eq!(
+                profile["id"], template["manufacturerId"],
+                "template {} carries the wrong plant profile",
+                template["id"]
+            );
+            assert_eq!(profile["name"], template["manufacturer"]);
+            assert!(profile["searchText"].as_str().unwrap().contains(
+                &template["id"].as_str().unwrap().to_lowercase()
+            ));
+        }
+    }
+
+    #[test]
+    fn hydrated_manufacturers_are_sorted_for_stable_supplier_lists() {
+        let hydrated: serde_json::Value =
+            serde_json::from_str(&hydrated_registry_json("").unwrap()).unwrap();
+        let names: Vec<&str> = hydrated["manufacturers"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|manufacturer| manufacturer["name"].as_str().unwrap())
+            .collect();
+        let mut sorted = names.clone();
+        sorted.sort_by_key(|name| (name.to_lowercase(), name.to_string()));
+        assert_eq!(names, sorted);
+        // The web Plant app files this plant under C-D, so the native one must
+        // too or the same registry reads as two different supplier lists.
+        let cd_unity = names.iter().position(|name| *name == "CD Unity");
+        let cascade = names
+            .iter()
+            .position(|name| *name == "Cascade Record Pressing");
+        if let (Some(cd_unity), Some(cascade)) = (cd_unity, cascade) {
+            assert!(cascade < cd_unity);
+        }
+    }
+
+    #[test]
+    fn hydrated_search_text_drops_absent_contact_fields() {
+        let hydrated: serde_json::Value =
+            serde_json::from_str(&hydrated_registry_json("").unwrap()).unwrap();
+        for manufacturer in hydrated["manufacturers"].as_array().unwrap() {
+            let search_text = manufacturer["searchText"].as_str().unwrap();
+            assert!(
+                !search_text.contains("null"),
+                "{} leaked an absent field into its search text",
+                manufacturer["id"]
+            );
+            assert_eq!(search_text, search_text.to_lowercase());
+        }
     }
 }
