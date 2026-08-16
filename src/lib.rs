@@ -1,3 +1,7 @@
+mod registry;
+
+pub use registry::{PLANT_MANUFACTURERS, PLANT_TEMPLATES};
+
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 use std::fmt;
@@ -1719,165 +1723,267 @@ fn template_preflight_checks(
     ]
 }
 
-/// The curated manufacturer/template registry, exactly as committed.
+/// A plant in the registry.
 ///
-/// Every consumer reads the registry from this crate. A platform that copies
-/// the JSON into its own bundle drifts from the templates the proof geometry
-/// in this crate was written against.
-pub const REGISTRY_JSON: &str = include_str!("../fixtures/record-plant-registry.json");
+/// Borrowed rather than owned throughout: the registry is compiled in, so
+/// nothing needs to be allocated to read it.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PlantManufacturer {
+    pub id: &'static str,
+    pub name: &'static str,
+    pub country_code: Option<&'static str>,
+    pub website_url: Option<&'static str>,
+    pub contact_email: Option<&'static str>,
+    pub contact_url: Option<&'static str>,
+}
+
+/// One guide on a template: where a plant trims, bleeds, or punches.
+#[derive(Debug, Clone, Copy, PartialEq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PlantGuide {
+    pub id: &'static str,
+    pub layer: GuideLayerKind,
+    pub geometry: GuideGeometry,
+}
+
+/// What a plant requires of the artwork it is sent.
+#[derive(Debug, Clone, Copy, PartialEq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PlantPrintRequirements {
+    pub preferred_output: &'static str,
+    pub accepted_formats: &'static [&'static str],
+    pub color_modes: &'static [&'static str],
+    pub min_raster_ppi: Option<u16>,
+    pub min_bitmap_ppi: Option<u16>,
+    pub bleed_mm: Option<f64>,
+    pub safety_mm: Option<f64>,
+    pub keep_template_layer_out_of_final: bool,
+    /// `None` where the plant publishes no font requirement. That is not the
+    /// same as permitting unembedded fonts — it means nobody has confirmed it.
+    pub embed_or_outline_fonts: Option<bool>,
+    pub pdf_standard: Option<&'static str>,
+    // Only a handful of plants publish an output condition; the rest omit the
+    // field entirely rather than carrying an explicit null.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub output_condition_identifier: Option<&'static str>,
+    pub notes: &'static [&'static str],
+}
+
+/// Where a template's measurements came from.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PlantSourceReference {
+    pub title: &'static str,
+    pub url: &'static str,
+    pub retrieved_on: &'static str,
+}
+
+/// A plant template, as compiled into this crate.
+#[derive(Debug, Clone, Copy, PartialEq, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PlantTemplate {
+    pub id: &'static str,
+    pub name: &'static str,
+    pub manufacturer_id: &'static str,
+    pub manufacturer: &'static str,
+    pub product: &'static str,
+    pub kind: RecordPlantTemplateKind,
+    pub version: Option<&'static str>,
+    pub document: RectMm,
+    pub confidence: MeasurementConfidence,
+    pub guides: &'static [PlantGuide],
+    pub requirements: PlantPrintRequirements,
+    pub source: PlantSourceReference,
+    pub source_notes: &'static [&'static str],
+}
+
+impl PlantTemplate {
+    /// The diameter of the area this template's artwork has to fill.
+    ///
+    /// Bleed wins over trim because bleed is what the artwork must cover, and
+    /// a template's trim guide may describe the source page rather than the
+    /// label. Only circles count for the same reason.
+    pub fn artwork_diameter_mm(&self) -> Option<f64> {
+        let mut trim: Option<f64> = None;
+        let mut bleed: Option<f64> = None;
+        for guide in self.guides {
+            let GuideGeometry::Circle { circle } = guide.geometry else {
+                continue;
+            };
+            let diameter = circle.diameter();
+            match guide.layer {
+                GuideLayerKind::Bleed => {
+                    bleed = Some(bleed.map_or(diameter, |value: f64| value.max(diameter)))
+                }
+                GuideLayerKind::Trim => {
+                    trim = Some(trim.map_or(diameter, |value: f64| value.max(diameter)))
+                }
+                _ => {}
+            }
+        }
+        bleed.or(trim)
+    }
+
+    /// True for the label templates a record's centre label is proofed against.
+    pub fn is_label(&self) -> bool {
+        matches!(
+            self.kind,
+            RecordPlantTemplateKind::CenterLabel | RecordPlantTemplateKind::PictureLabel
+        )
+    }
+
+    /// The plant that publishes this template.
+    pub fn manufacturer_profile(&self) -> Option<&'static PlantManufacturer> {
+        PLANT_MANUFACTURERS
+            .iter()
+            .find(|manufacturer| manufacturer.id == self.manufacturer_id)
+    }
+}
+
+/// Looks a template up by id.
+pub fn plant_template(id: &str) -> Option<&'static PlantTemplate> {
+    PLANT_TEMPLATES.iter().find(|template| template.id == id)
+}
+
+/// Looks a plant up by id.
+pub fn plant_manufacturer(id: &str) -> Option<&'static PlantManufacturer> {
+    PLANT_MANUFACTURERS
+        .iter()
+        .find(|manufacturer| manufacturer.id == id)
+}
+
+/// The registry schema version the apps expect.
+pub const REGISTRY_SCHEMA_VERSION: u32 = 1;
+
+/// The lowercase text a supplier search matches against.
+///
+/// It covers the plant and everything pressable from it, so typing a format or
+/// a product name finds the supplier as well as the template.
+pub fn plant_search_text(manufacturer: &PlantManufacturer) -> String {
+    let mut parts: Vec<&str> = vec![manufacturer.id, manufacturer.name];
+    parts.extend(
+        [
+            manufacturer.country_code,
+            manufacturer.website_url,
+            manufacturer.contact_email,
+            manufacturer.contact_url,
+        ]
+        .into_iter()
+        .flatten(),
+    );
+    for template in PLANT_TEMPLATES
+        .iter()
+        .filter(|template| template.manufacturer_id == manufacturer.id)
+    {
+        parts.extend([template.id, template.name, template.product]);
+        parts.push(template_kind_name(template.kind));
+        if let Some(version) = template.version {
+            parts.push(version);
+        }
+        parts.push(confidence_name(template.confidence));
+        parts.push(template.requirements.preferred_output);
+        if let Some(identifier) = template.requirements.output_condition_identifier {
+            parts.push(identifier);
+        }
+        parts.extend(template.requirements.accepted_formats.iter().copied());
+        parts.extend(template.requirements.color_modes.iter().copied());
+    }
+    parts
+        .into_iter()
+        .filter(|part| !part.trim().is_empty())
+        .map(|part| part.to_lowercase().split_whitespace().collect::<Vec<_>>().join(" "))
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
+/// The plants in the order an app lists them.
+///
+/// Case is folded first so "CD Unity" files under C-D rather than ahead of
+/// "Cascade", which is where a raw byte comparison would put it.
+pub fn plant_manufacturers_sorted() -> Vec<&'static PlantManufacturer> {
+    let mut manufacturers: Vec<&'static PlantManufacturer> = PLANT_MANUFACTURERS.iter().collect();
+    manufacturers.sort_by(|left, right| {
+        (left.name.to_lowercase(), left.name).cmp(&(right.name.to_lowercase(), right.name))
+    });
+    manufacturers
+}
 
 /// Builds the registry the Plant apps consume.
 ///
-/// The curated registry keeps manufacturers and templates in separate arrays.
-/// An app resolving a template's plant on every row would repeat that join in
-/// each renderer, so hydration inlines the manufacturer profile on the template
-/// and precomputes the lowercase text the supplier search matches against.
+/// The registry keeps plants and templates apart. An app resolving a
+/// template's plant on every row would repeat that join in each renderer, so
+/// this inlines the plant on the template and precomputes the search text.
 pub fn hydrated_registry_json(generated_at: &str) -> Result<String, RecordPlantError> {
-    let registry: serde_json::Value = serde_json::from_str(REGISTRY_JSON)
-        .map_err(|error| RecordPlantError::Serialize(error.to_string()))?;
-    let templates = registry_array(&registry, "templates")?;
-    let manufacturers = registry_array(&registry, "manufacturers")?;
-
-    // Search text covers the plant and everything pressable from it, so typing a
-    // format or a product name finds the supplier as well as the template.
-    let mut template_text: BTreeMap<String, Vec<String>> = BTreeMap::new();
-    for template in templates {
-        let manufacturer_id = template_manufacturer_id(template)?;
-        let parts = template_text.entry(manufacturer_id).or_default();
-        for key in ["id", "name", "product", "kind", "version", "confidence"] {
-            parts.push(json_text(template.get(key)));
-        }
-        let requirements = template.get("requirements");
-        for key in ["preferredOutput", "outputConditionIdentifier"] {
-            parts.push(json_text(requirements.and_then(|value| value.get(key))));
-        }
-        for key in ["acceptedFormats", "colorModes"] {
-            if let Some(values) = requirements
-                .and_then(|value| value.get(key))
-                .and_then(serde_json::Value::as_array)
-            {
-                parts.extend(values.iter().map(|value| json_text(Some(value))));
+    let profiles: Vec<serde_json::Value> = plant_manufacturers_sorted()
+        .into_iter()
+        .map(|manufacturer| {
+            let mut value = serde_json::to_value(manufacturer)
+                .map_err(|error| RecordPlantError::Serialize(error.to_string()))?;
+            if let Some(object) = value.as_object_mut() {
+                object.insert(
+                    "searchText".to_string(),
+                    serde_json::Value::String(plant_search_text(manufacturer)),
+                );
             }
-        }
-    }
+            Ok(value)
+        })
+        .collect::<Result<_, RecordPlantError>>()?;
 
-    let mut profiles = Vec::with_capacity(manufacturers.len());
-    for manufacturer in manufacturers {
-        let id = json_text(manufacturer.get("id"));
-        if id.is_empty() {
-            return Err(RecordPlantError::InvalidCustomTemplate(
-                "registry manufacturer is missing id".to_string(),
-            ));
-        }
-        let mut search_parts = vec![
-            json_text(manufacturer.get("id")),
-            json_text(manufacturer.get("name")),
-            json_text(manufacturer.get("countryCode")),
-            json_text(manufacturer.get("websiteUrl")),
-            json_text(manufacturer.get("contactEmail")),
-            json_text(manufacturer.get("contactUrl")),
-        ];
-        search_parts.extend(template_text.get(&id).cloned().unwrap_or_default());
-        let search_text = search_parts
-            .iter()
-            .filter(|part| !part.is_empty())
-            .map(|part| normalize_search_text(part))
-            .collect::<Vec<_>>()
-            .join(" ");
-        let mut profile = manufacturer.clone();
-        let Some(object) = profile.as_object_mut() else {
-            return Err(RecordPlantError::InvalidCustomTemplate(
-                "registry manufacturer must be an object".to_string(),
-            ));
-        };
-        object.insert(
-            "searchText".to_string(),
-            serde_json::Value::String(search_text),
-        );
-        profiles.push((id, profile));
-    }
-    // The apps render suppliers in the order this array arrives in. Fold case
-    // first so "CD Unity" files under C-D and not ahead of "Cascade" the way a
-    // raw byte comparison would put it.
-    profiles.sort_by(|(_, left), (_, right)| {
-        let left = json_text(left.get("name"));
-        let right = json_text(right.get("name"));
-        (left.to_lowercase(), left.clone()).cmp(&(right.to_lowercase(), right))
-    });
-
-    let profile_by_id: BTreeMap<&str, &serde_json::Value> = profiles
+    let profile_by_id: BTreeMap<&str, &serde_json::Value> = PLANT_MANUFACTURERS
         .iter()
-        .map(|(id, profile)| (id.as_str(), profile))
+        .filter_map(|manufacturer| {
+            profiles
+                .iter()
+                .find(|profile| profile.get("id").and_then(|id| id.as_str()) == Some(manufacturer.id))
+                .map(|profile| (manufacturer.id, profile))
+        })
         .collect();
-    let mut hydrated_templates = Vec::with_capacity(templates.len());
-    for template in templates {
-        let manufacturer_id = template_manufacturer_id(template)?;
-        let Some(profile) = profile_by_id.get(manufacturer_id.as_str()) else {
+
+    let mut templates = Vec::with_capacity(PLANT_TEMPLATES.len());
+    for template in PLANT_TEMPLATES {
+        let Some(profile) = profile_by_id.get(template.manufacturer_id) else {
             return Err(RecordPlantError::InvalidCustomTemplate(format!(
-                "registry template {} references unknown manufacturer {manufacturer_id}",
-                json_text(template.get("id"))
+                "template {} references unknown plant {}",
+                template.id, template.manufacturer_id
             )));
         };
-        let mut hydrated = template.clone();
-        let Some(object) = hydrated.as_object_mut() else {
-            return Err(RecordPlantError::InvalidCustomTemplate(
-                "registry template must be an object".to_string(),
-            ));
-        };
-        object.insert("manufacturerProfile".to_string(), (*profile).clone());
-        hydrated_templates.push(hydrated);
+        let mut value = serde_json::to_value(template)
+            .map_err(|error| RecordPlantError::Serialize(error.to_string()))?;
+        if let Some(object) = value.as_object_mut() {
+            object.insert("manufacturerProfile".to_string(), (*profile).clone());
+        }
+        templates.push(value);
     }
 
     let hydrated = serde_json::json!({
-        "schemaVersion": registry.get("schemaVersion").cloned().unwrap_or(serde_json::Value::from(1)),
+        "schemaVersion": REGISTRY_SCHEMA_VERSION,
         "generatedAt": generated_at,
-        "manufacturers": profiles.into_iter().map(|(_, profile)| profile).collect::<Vec<_>>(),
-        "templates": hydrated_templates,
+        "manufacturers": profiles,
+        "templates": templates,
     });
     serde_json::to_string(&hydrated)
         .map_err(|error| RecordPlantError::Serialize(error.to_string()))
 }
 
-fn registry_array<'a>(
-    registry: &'a serde_json::Value,
-    key: &str,
-) -> Result<&'a Vec<serde_json::Value>, RecordPlantError> {
-    registry
-        .get(key)
-        .and_then(serde_json::Value::as_array)
-        .ok_or_else(|| {
-            RecordPlantError::InvalidCustomTemplate(format!("registry is missing {key}[]"))
-        })
-}
-
-fn template_manufacturer_id(template: &serde_json::Value) -> Result<String, RecordPlantError> {
-    let id = json_text(template.get("manufacturerId"));
-    if id.is_empty() {
-        return Err(RecordPlantError::InvalidCustomTemplate(format!(
-            "registry template {} is missing manufacturerId",
-            json_text(template.get("id"))
-        )));
-    }
-    Ok(id)
-}
-
-/// Reads a registry field as text. A null or absent field reads as empty so it
-/// drops out of search text instead of matching the literal word "null".
-fn json_text(value: Option<&serde_json::Value>) -> String {
-    match value {
-        Some(serde_json::Value::String(text)) => text.clone(),
-        Some(serde_json::Value::Number(number)) => number.to_string(),
-        Some(serde_json::Value::Bool(flag)) => flag.to_string(),
-        _ => String::new(),
+fn template_kind_name(kind: RecordPlantTemplateKind) -> &'static str {
+    match kind {
+        RecordPlantTemplateKind::CenterLabel => "center-label",
+        RecordPlantTemplateKind::PictureLabel => "picture-label",
+        RecordPlantTemplateKind::OuterSleeve => "outer-sleeve",
+        RecordPlantTemplateKind::InnerSleeve => "inner-sleeve",
+        RecordPlantTemplateKind::GatefoldSleeve => "gatefold-sleeve",
+        RecordPlantTemplateKind::Insert => "insert",
+        RecordPlantTemplateKind::PackagingGuide => "packaging-guide",
     }
 }
 
-fn normalize_search_text(value: &str) -> String {
-    value
-        .to_lowercase()
-        .split_whitespace()
-        .collect::<Vec<_>>()
-        .join(" ")
+fn confidence_name(confidence: MeasurementConfidence) -> &'static str {
+    match confidence {
+        MeasurementConfidence::PlantPublished => "plant-published",
+        MeasurementConfidence::DerivedFromPlantTemplate => "derived-from-plant-template",
+        MeasurementConfidence::NeedsPlantConfirmation => "needs-plant-confirmation",
+    }
 }
 
 #[cfg(test)]
@@ -1988,10 +2094,105 @@ mod tests {
     }
 
     #[test]
-    fn registry_json_parses_into_the_documented_two_array_shape() {
-        let registry: serde_json::Value = serde_json::from_str(REGISTRY_JSON).unwrap();
-        assert!(registry["manufacturers"].as_array().unwrap().len() > 0);
-        assert!(registry["templates"].as_array().unwrap().len() > 0);
+    fn every_template_belongs_to_a_plant_in_the_registry() {
+        assert!(!PLANT_MANUFACTURERS.is_empty());
+        assert!(!PLANT_TEMPLATES.is_empty());
+        for template in PLANT_TEMPLATES {
+            assert!(
+                template.manufacturer_profile().is_some(),
+                "template {} references a plant that is not in the registry",
+                template.id
+            );
+            assert_eq!(
+                template.manufacturer_profile().unwrap().name,
+                template.manufacturer,
+                "template {} disagrees with its plant's name",
+                template.id
+            );
+        }
+    }
+
+    #[test]
+    fn registry_ids_are_unique() {
+        // A duplicate id silently shadows a template in every lookup.
+        let mut template_ids: Vec<&str> = PLANT_TEMPLATES.iter().map(|t| t.id).collect();
+        template_ids.sort_unstable();
+        let count = template_ids.len();
+        template_ids.dedup();
+        assert_eq!(template_ids.len(), count, "duplicate template id");
+
+        let mut plant_ids: Vec<&str> = PLANT_MANUFACTURERS.iter().map(|m| m.id).collect();
+        plant_ids.sort_unstable();
+        let count = plant_ids.len();
+        plant_ids.dedup();
+        assert_eq!(plant_ids.len(), count, "duplicate plant id");
+    }
+
+    #[test]
+    fn label_templates_publish_an_artwork_diameter() {
+        // Choosing a template for a proof is a diameter match, so a label with
+        // no measurable artwork area can never be selected.
+        //
+        // The two label kinds are different objects: a centre label is the
+        // paper in the middle, while a picture label prints the whole disc
+        // face, so its artwork is record-sized.
+        for template in PLANT_TEMPLATES.iter().filter(|t| t.is_label()) {
+            let diameter = template.artwork_diameter_mm();
+            let plausible = match template.kind {
+                RecordPlantTemplateKind::CenterLabel => 40.0..=120.0,
+                _ => 40.0..=310.0,
+            };
+            assert!(
+                diameter.is_some_and(|value| plausible.contains(&value)),
+                "label {} has an implausible artwork diameter: {diameter:?}",
+                template.id
+            );
+        }
+    }
+
+    #[test]
+    fn a_picture_label_is_never_chosen_for_a_centre_label_proof() {
+        // A picture label covers the whole disc face. Proofing a 98.4 mm
+        // centre label against one would scale the artwork down by a third.
+        let picture_labels: Vec<&PlantTemplate> = PLANT_TEMPLATES
+            .iter()
+            .filter(|t| t.kind == RecordPlantTemplateKind::PictureLabel)
+            .collect();
+        assert!(!picture_labels.is_empty());
+        for template in picture_labels {
+            let diameter = template.artwork_diameter_mm().unwrap();
+            assert!(
+                diameter > 120.0,
+                "{} is picture-label sized but measures {diameter} mm",
+                template.id
+            );
+        }
+    }
+
+    #[test]
+    fn a_plant_that_publishes_no_font_rule_is_not_recorded_as_permitting_loose_fonts() {
+        // Three plants publish no font requirement. Unknown has to stay
+        // unknown; false would tell a designer they may ship live text.
+        let unknown = PLANT_TEMPLATES
+            .iter()
+            .filter(|t| t.requirements.embed_or_outline_fonts.is_none())
+            .count();
+        assert!(unknown > 0);
+        assert!(PLANT_TEMPLATES
+            .iter()
+            .any(|t| t.requirements.embed_or_outline_fonts == Some(true)));
+    }
+
+    #[test]
+    fn lookups_find_templates_and_plants_by_id() {
+        let template = PLANT_TEMPLATES[0];
+        assert_eq!(plant_template(template.id).unwrap().id, template.id);
+        assert!(plant_template("no-such-template").is_none());
+        assert_eq!(
+            plant_manufacturer(template.manufacturer_id).unwrap().id,
+            template.manufacturer_id
+        );
+        assert!(plant_manufacturer("no-such-plant").is_none());
     }
 
     #[test]
@@ -2000,10 +2201,10 @@ mod tests {
             serde_json::from_str(&hydrated_registry_json("2026-01-01T00:00:00.000Z").unwrap())
                 .unwrap();
         assert_eq!(hydrated["generatedAt"], "2026-01-01T00:00:00.000Z");
+        assert_eq!(hydrated["schemaVersion"], REGISTRY_SCHEMA_VERSION);
 
-        let source: serde_json::Value = serde_json::from_str(REGISTRY_JSON).unwrap();
         let templates = hydrated["templates"].as_array().unwrap();
-        assert_eq!(templates.len(), source["templates"].as_array().unwrap().len());
+        assert_eq!(templates.len(), PLANT_TEMPLATES.len());
         for template in templates {
             let profile = &template["manufacturerProfile"];
             assert_eq!(

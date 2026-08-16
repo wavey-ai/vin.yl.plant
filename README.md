@@ -3,10 +3,22 @@
 `record-plant` is the Bitneedle crate for physical vinyl manufacturing proof
 schema, guide rendering, and plant-facing preflight rules.
 
-Curated manufacturer/template facts live in
-[`fixtures/record-plant-registry.json`](fixtures/record-plant-registry.json),
-not in Rust. The crate takes supplied template JSON and returns deterministic
-proof overlays, manifests, record-context previews, and preflight policy.
+Curated manufacturer/template facts live in Rust, in
+[`src/registry.rs`](src/registry.rs), as `PLANT_MANUFACTURERS` and
+`PLANT_TEMPLATES`. That file is the source of truth: edit it directly. Holding
+the registry as typed data means a bad measurement fails to compile instead of
+surfacing at a plant, and every consumer — the web UI and the Apple app both
+link this crate — reads exactly the same templates with nothing to fetch,
+parse, or keep in sync.
+
+The crate also takes supplied template JSON and returns deterministic proof
+overlays, manifests, record-context previews, and preflight policy.
+
+`fixtures/record-plant-registry.json` is kept only as the provenance record for
+the original import, and as the input to the upstream source-refresh pipeline
+below. It is not read at runtime. To re-import it after a refresh, run
+`python3 scripts/import-registry-from-json.py fixtures/record-plant-registry.json > src/registry.rs`
+and check the result over — the generated file is committed, not built.
 
 ## Scope
 
